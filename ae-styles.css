@@ -1,0 +1,41 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+#m4aod, #samplePack, #soundDesign p {
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+    padding: 10px;
+    max-width: 800px;
+    min-width: 200px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    font-size: 16px;
+    padding: 40px;
+}
+
+.nav a {
+    padding: 0px;
+    flex: 1 1 auto;
+    color: blue;
+    text-transform: lowercase;    
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    
+    max-width: 1000px;
+}
