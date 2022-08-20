@@ -31,7 +31,18 @@ p {
     text-transform: lowercase;    
 }
 
+.mainAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 2 1 50%;
+    align-items: center;
+    margin: 40px;
+}
 
+
+
+/*
 .mainAbout {
     display: flex;
     flex-direction: row;
@@ -39,9 +50,10 @@ p {
     flex: 1 1 auto;
     align-items: center;
 }
+*/
 
 #mainHeadshot {
-    display: block;
+    display: inline;
     margin: 0 20px;
     max-width: 500px;
     min-width: 350px;
@@ -52,6 +64,5 @@ p {
     display: inline;
     max-width: 800px;
     min-width: 400px;
-    margin: auto;
     padding: 0 20px;
 }
