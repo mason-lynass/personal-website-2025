@@ -4,16 +4,10 @@
 
 h1 {
     font-size: 36px;
-    text-align: center;
 }
 
-#m4aod, #samplePack, #soundDesign p {
+h1, h2, a {
     text-align: center;
-    font-size: 16px;
-    margin: auto;
-    padding: 10px;
-    max-width: 800px;
-    min-width: 200px;
 }
 
 .nav {
@@ -31,12 +25,154 @@ h1 {
     text-transform: lowercase;    
 }
 
-h2 {
+
+.m4aod {
+    display: block;
+    width: 1000px;
+    height: 1000px;
+    margin: 20px auto;
+    background-image: url(./images/m4aod-album-art-dark.png);
+}
+
+.m4aodText {
+    margin: auto;
+    padding: 320px 0;
     text-align: center;
 }
 
-.m4aodArt {
-    display: block;
-    margin: 0px auto;
+.m4aod h2, .m4aod h1, .m4aod a {
+    color: white;
+}
+
+.m4aod h1 {
+    font-size: 60px;
+}
+
+.m4aod h2 {
+    font-size: 40px;
+}
+
+.m4aod a {
+    padding: 100px 0;
+    font-size: 30px;
+}
+
+.m4aodVideoFlexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+
+.samplePack{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 40px;
+    align-items: center;
+}
+
+.samplePack img {
+    width: 800px;
+    height: 800px;
+}
+
+.samplePackText {
     max-width: 1000px;
+}
+
+.samplePackText h2 {
+    margin: 40px;
+}
+
+
+.spList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.samplesLink {
+    text-align: center;
+}
+
+.soundDesign {
+    margin: 40px 0;
+}
+
+.sectionTitle {
+    margin: 50px;
+}
+
+.loopingMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.insideLoopingMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.loopingMain p {
+    width: 800px;
+    margin: 40px 0;
+}
+
+.loopingExtra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 70px;
+}
+
+.recital {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+.recital p {
+    padding: 20px;
+}
+
+.recitalExcerpts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 0 40px 0;
+}
+
+.recitalExcerpts p {
+    max-width: 600px;
+    text-align: center;
+}
+
+.fote, .ttf, .nyc {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.tesserae {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    margin: 40px auto;
+}
+
+.tesserae p{
+    width: 800px;
+}
+
+.recList {
+    margin: 40px 0;
+    text-align: center;
 }
