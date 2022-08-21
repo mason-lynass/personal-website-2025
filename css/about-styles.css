@@ -16,21 +16,6 @@ p {
     min-width: 200px;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    font-size: 16px;
-    padding: 40px;
-}
-
-.nav a {
-    padding: 0px;
-    flex: 1 1 auto;
-    color: blue;
-    text-transform: lowercase;    
-}
-
 .mainAbout {
     display: flex;
     flex-direction: row;

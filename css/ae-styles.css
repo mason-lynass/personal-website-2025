@@ -14,21 +14,6 @@ iframe {
     margin: 10px;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    font-size: 16px;
-    padding: 40px;
-}
-
-.nav a {
-    padding: 0px;
-    flex: 1 1 auto;
-    color: blue;
-    text-transform: lowercase;    
-}
-
 .sectionTitle {
     margin: 50px 0;
 }
@@ -38,7 +23,7 @@ iframe {
     width: 1000px;
     height: 1000px;
     margin: 20px auto;
-    background-image: url(./images/m4aod-album-art-dark.png);
+    background-image: url(/images/m4aod-album-art-dark.png);
     background-color: #cccccc;
 }
 

@@ -1,0 +1,18 @@
+#MLHeader {
+    font-size: 36px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    font-size: 16px;
+    padding: 20px 0 40px 0;
+}
+
+.nav a {
+    padding: 0 10px;
+    color: blue;
+    text-transform: lowercase;    
+}
