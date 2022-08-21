@@ -1,0 +1,78 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1, h2, a {
+    text-align: center;
+}
+
+iframe {
+    margin: 0 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    font-size: 16px;
+    padding: 40px;
+}
+
+.nav a {
+    padding: 0 10px;
+    color: blue;
+    text-transform: lowercase;    
+}
+
+.sdMain {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.sdReel {
+    min-width: 784px;
+}
+
+
+.sdMain p {
+    max-width: 850px;
+    min-width: 400px;
+    margin: 20px;
+}
+
+.sdFreelance {
+    text-align: center;
+    margin: 20px;
+}
+
+.sdFreelance p, a {
+    display: inline;
+}
+
+.sdVidFlex {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sdPVidwText {
+    margin: 20px 0;
+}
+
+.sdPVidwText p {
+    margin: 10px;
+    max-width: 600px;
+    font-size: 12px;
+}
