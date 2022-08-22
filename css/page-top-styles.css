@@ -7,12 +7,16 @@
     flex-direction: row;
     justify-content: center;
     margin: 0px;
-    font-size: 16px;
+    font-size: 20px;
     padding: 20px 0 40px 0;
 }
 
 .nav a {
-    padding: 0 10px;
+    padding: 0 15px;
     color: blue;
     text-transform: lowercase;    
+}
+
+hr {
+    margin: 40px;
 }

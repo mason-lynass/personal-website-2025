@@ -2,32 +2,23 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1 {
-    font-size: 36px;
+h2 {
+    font-size: 30px;
 }
 
 h1, h2, a {
     text-align: center;
 }
 
+p {
+    font-size: 20px;
+}
+
 iframe {
     margin: 0 10px;
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0px;
-    font-size: 16px;
-    padding: 40px;
-}
 
-.nav a {
-    padding: 0 10px;
-    color: blue;
-    text-transform: lowercase;    
-}
 
 .sdMain {
     display: flex;
@@ -36,7 +27,7 @@ iframe {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding: 40px 20px;
+    padding: 40px 10px;
 }
 
 .sdReel {
@@ -75,4 +66,44 @@ iframe {
     margin: 10px;
     max-width: 600px;
     font-size: 12px;
+}
+
+#samplePacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px 20px 20px 20px;
+}
+
+#percImg {
+    max-width: 600px;
+}
+
+#spText {
+    margin: 20px;
+    max-width: 800px;
+}
+
+.trifilm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#trifilmText {
+    max-width: 700px;
+    margin: 0 10px;
+}
+
+#trifilmText h2 {
+    margin: 50px 0;
+}
+
+.instagram-media {
+    margin: 0px 10px;
 }
