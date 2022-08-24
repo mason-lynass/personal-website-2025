@@ -17,12 +17,13 @@ html {
     justify-content: center;
     margin: 0px;
     font-size: 20px;
-    padding: 5px 0 40px 0;
+    padding: 5px 0 5px 0;
+    background-color: rgb(17, 70, 17);
 }
 
 .nav a {
     padding: 15px 15px;
-    color: blue;
+    color: antiquewhite;
     text-transform: lowercase;    
 }
 
@@ -30,6 +31,10 @@ hr {
     margin: 40px;
 }
 
-.activePage{
-    color: black;
+.activePage {
+    background-color: antiquewhite;
+}
+
+ .nav .activePage {
+    color: rgb(0, 6, 0);
 }
