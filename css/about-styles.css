@@ -17,8 +17,12 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
     flex: 2 1 50%;
+    flex-wrap: wrap-reverse;
     align-items: center;
     margin: 40px;
+    padding: 40px;
+    border: 5px solid black;
+    background-image: url(/images/Washi\,\ green.bmp)
 }
 
 
@@ -38,12 +42,15 @@ p {
     margin: 0 20px;
     max-width: 500px;
     min-width: 350px;
-    
+    margin: 20px;
+    border: 15px solid white;
 }
 
 .aboutCopy {
     display: inline;
     max-width: 800px;
     min-width: 400px;
-    padding: 0 20px;
+    padding: 40px;
+    background-color: antiquewhite;
+    border: 5px solid black;
 }
