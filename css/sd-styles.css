@@ -6,15 +6,9 @@ h1, h2, a {
     text-align: center;
 }
 
-.norm p, .norm a {
-    font-size: 20px;
-}
-
 iframe {
     margin: 0 10px;
 }
-
-
 
 .sdMain {
     display: flex;
@@ -24,6 +18,16 @@ iframe {
     flex-wrap: wrap;
     align-items: center;
     padding: 40px 10px;
+}
+
+.norm {
+    margin: 20px 0;
+    border: 5px solid rgb(12,45,12);
+}
+
+.norm p {
+    font-size: 20px;
+    text-align: center;
 }
 
 .sdReel {
@@ -51,17 +55,21 @@ iframe {
     flex-direction: row;
     flex: 1 1 auto;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .sdPVidwText {
-    margin: 20px 0;
+    padding: 10px;
+    margin: 20px 15px;
+    border: 3px solid rgb(12,45,12);
 }
 
 .sdPVidwText p {
     margin: 10px;
     max-width: 600px;
     font-size: 12px;
+    text-align: center;
 }
 
 #samplePacks {
@@ -79,7 +87,10 @@ iframe {
 
 #spText {
     margin: 20px;
-    max-width: 800px;
+    max-width: 820px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 3px solid rgb(12,45,12);
 }
 
 .trifilm {
@@ -94,6 +105,9 @@ iframe {
 #trifilmText {
     max-width: 700px;
     margin: 0 10px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 3px solid rgb(12,45,12);
 }
 
 #trifilmText h2 {
@@ -122,6 +136,9 @@ iframe {
 
 .myMusicText {
     font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    border: 3px solid rgb(12,45,12);
 }
 
 #m4aodArt {

@@ -45,7 +45,10 @@ hr {
     gap: 30px;
 }
 
-
+.liveLooping {
+    border: 3px solid rgb(12,45,12);
+    padding: 0 30px;
+}
 
 .liveLooping p, ul, li {
     max-width: 800px;
@@ -78,11 +81,6 @@ hr {
     margin: 40px;
 }
 
-.m4aodCopy, .uetext {
-    max-width: 680px;
-    text-align: center;
-}
-
 .unrealEngine {
     display: flex;
     flex-direction: row;
@@ -97,4 +95,31 @@ hr {
     margin: 20px 0;
 }
 
+.fantasySumo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
 
+.fantasySumo img {
+    max-width: 1000px;
+}
+
+.fsText {
+    max-width: 700px;
+    padding: 10px 20px;
+    text-align: center;
+    border: 3px solid rgb(12,45,12);
+    margin: 20px 0 0 0;
+}
+
+.fBox {
+    padding: 10px 20px;
+    text-align: center;
+    border: 3px solid rgb(12,45,12);
+    max-width: 680px;
+    margin: 0 100px;
+}
