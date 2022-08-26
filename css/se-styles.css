@@ -11,7 +11,7 @@ hr {
 }
 
 .mainText {
-    background-image: url(images/m4aod-album-art-light.png);
+    background-image: url(../images/m4aod-album-art-light.png);
     text-align: center;
     background-position: center;
     background-size: cover;

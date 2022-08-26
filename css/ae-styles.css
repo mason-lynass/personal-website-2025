@@ -20,7 +20,7 @@ iframe {
     width: 1000px;
     height: 1000px;
     margin: 20px auto;
-    background-image: url(images/m4aod-album-art-dark.png);
+    background-image: url(../images/m4aod-album-art-dark.png);
 }
 
 .m4aodText {
