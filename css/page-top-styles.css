@@ -20,7 +20,7 @@ html {
     margin: 0px;
     font-size: 20px;
     border: 3px solid black;
-    background-image: url(/images/m4aod-album-art-light.png);
+    background-image: url(images/m4aod-album-art-light.png);
 }
 
 .nav a {

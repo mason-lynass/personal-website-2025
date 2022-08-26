@@ -18,7 +18,7 @@ p, h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url(/images/m4aod-album-art-light.png);
+    background-image: url(images/m4aod-album-art-light.png);
 }
 
 .singleBox {
