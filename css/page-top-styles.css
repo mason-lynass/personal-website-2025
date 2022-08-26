@@ -38,7 +38,12 @@ hr {
 }
 
 
- .nav .activePage {
+.nav .activePage {
+    color: rgb(0, 6, 0);
+    background-color: antiquewhite;
+}
+
+.nav .otherPage:hover {
     color: rgb(0, 6, 0);
     background-color: antiquewhite;
 }
