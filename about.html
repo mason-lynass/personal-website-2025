@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./css/page-top-styles.css" />
     <link rel="stylesheet" href="./css/about-styles.css" />
 </head>
-<script src="script.js"></script>
 <body>
     <header>
         <h1 id="MLHeader">Mason Lynass</h1>
@@ -22,15 +21,38 @@
     </header>
     <!--put this in a box-->
     <div class="mainAbout">
-        <div class="aboutCopy" id="aboutCopy">
-            <p>Mason Lynass is a music creator and A/V producer, currently based in Seattle, WA.</p>
-            <p>Mason has performed as a soloist and as an ensemble member in venues and concert halls across the country. As a soloist, Mason’s work was most recently featured at his Masters recital, at the Racer Sessions, and Seattle’s John Cage Musicircus. Outside of his solo work, Mason has played festivals and toured the west coast with Señor Fin and Baby Jessica, performed at the Percussive Arts Society International Convention with the UNT Percussion Ensemble and the Santa Clara Vanguard, and hung out at SoSI, Chosen Vale, and Inuksuit NYC.</p>     
-            <p>Mason graduated from the University of Washington with a Master of Music degree in percussion performance. At UW, Mason studied with Dr. Bonnie Whiting, played in the Partch Ensemble and various UW ensembles, and recorded and released a recital of solo percussion repertoire in June of 2020.</p>     
-            <p>Mason won the Portland Percussion Group’s Call for Scores with his work Tesserae, composed for percussion trio or quartet. The Portland Percussion Group premiered Tesserae in May of 2017, and the piece was published through Tapspace in 2019.</p>     
-            <p>Mason earned a Bachelor of Music degree in percussion performance from the University of North Texas, where he studied with Christopher Deane, Paul Rennick, and Ed Soph.</p>
+        <div class="leftSide" id="leftSide">
+            <div class="aboutCopy" id="aboutCopy">
+                <p>Mason Lynass is a music creator and A/V producer, currently based in Seattle, WA.</p>
+                <p>Mason has performed as a soloist and as an ensemble member in venues and concert halls across the country. As a soloist, Mason’s work was most recently featured at his Masters recital, at the Racer Sessions, and Seattle’s John Cage Musicircus. Outside of his solo work, Mason has played festivals and toured the west coast with Señor Fin and Baby Jessica, performed at the Percussive Arts Society International Convention with the UNT Percussion Ensemble and the Santa Clara Vanguard, and hung out at SoSI, Chosen Vale, and Inuksuit NYC.</p>     
+                <p>Mason graduated from the University of Washington with a Master of Music degree in percussion performance. At UW, Mason studied with Dr. Bonnie Whiting, played in the Partch Ensemble and various UW ensembles, and recorded and released a recital of solo percussion repertoire in June of 2020.</p>     
+                <p>Mason won the Portland Percussion Group’s Call for Scores with his work Tesserae, composed for percussion trio or quartet. The Portland Percussion Group premiered Tesserae in May of 2017, and the piece was published through Tapspace in 2019.</p>     
+                <p>Mason earned a Bachelor of Music degree in percussion performance from the University of North Texas, where he studied with Christopher Deane, Paul Rennick, and Ed Soph.</p>
+            </div>
+            <!--<p>hello what's up</p>-->
         </div>
         <img class="mainHeadshot" id="mainHeadshot" src="./images/PAS_headshot.jpeg" alt="headshot of Mason Lynass"></img><!--class="mainHeadshot" id="mainHeadshot"-->
     </div>
-    <!--gallery of pictures of me-->
+    <section class="slWrapper" id="galleryOfMe">
+        <button class="slArrow" id="slArrowPrev">
+            &#8249;
+        </button>
+        <button class="slArrow" id="slArrowNext">
+            &#8250;
+        </button>
+        <ul class="slContainer" id="slContainer">
+            <li class="slide arboretum"><img src="./images/mason-at-arboretum.png"></li>
+            <li class="slide diamond"><img src="./images/diamond-marimba.jpg"></li>
+            <li class="slide drumset"><img src="./images/drumset-bw.jpg"></li>
+            <li class="slide werewolf"><img src="./images/werewolf-avatar.jpeg"></li>
+            <li class="slide inuksuit"><img src="./images/inuksuit.png"></li>
+            <li class="slide kaytra"><img src="./images/kaytranada-rec.jpg"></li>
+            <li class="slide apple"><img src="./images/mason-apple.JPG"></li>
+            <li class="slide closeDrumset"><img src="./images/close-drumset-bw.jpg"></li>
+            <li class="slide flower"><img src="./images/me-w-flower.png"></li>
+            <li class="slide PAS"><img src="./images/PAS_headshot_square.jpeg"></li>
+        </ul>
+    </section>
 </body>
+    <script src="/script.js"></script>
 </html>
