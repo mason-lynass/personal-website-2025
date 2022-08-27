@@ -16,17 +16,21 @@ iframe {
 }
 
 .m4aod {
-    display: block;
-    width: 1000px;
-    height: 1000px;
-    margin: 20px auto;
+    display: flex;
+    max-width: 700px;
+    min-width: 0;
+    max-height: 700px;
+    min-height: 0;
+    margin: 40px auto;
     background-image: url(../images/m4aod-album-art-dark.png);
 }
 
 .m4aodText {
     margin: auto;
-    padding: 320px 0;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 200px 10px;
 }
 
 .m4aod h2, .m4aod h1, .m4aod a {
@@ -34,16 +38,16 @@ iframe {
 }
 
 .m4aod h1 {
-    font-size: 60px;
+    font-size: 42px;
 }
 
 .m4aod h2 {
-    font-size: 40px;
+    font-size: 36px;
+    margin: 0;
 }
 
 .m4aod a {
-    padding: 100px 0;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .m4aodVideoFlexbox {
@@ -51,7 +55,7 @@ iframe {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 40px 20px;
+    gap: 40px 20px;
 }
 
 .samplePack{
@@ -59,13 +63,14 @@ iframe {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 40px 20px;
     align-items: center;
+    padding: 0 10px;
 }
 
 .samplePack img {
-    width: 800px;
-    height: 800px;
+    flex: 0 1 auto;
+    max-width: 600px;
+    min-width: 0px;
 }
 
 .samplePackText {
@@ -93,25 +98,21 @@ iframe {
 .soundDesign {
     font-size: 24px;
     text-align: center;
-    margin: 40px 0;
+    padding: 0 10px;
 }
 
-.loopingMain {
+.llTitle {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 20px 0 20px 0;
-}
-
-.insideLoopingMain {
-    display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-.loopingMain p {
+.llTitle h2 {
+    width: 800px;
+}
+
+.llTitle p {
     width: 800px;
     margin: 40px 20px;
     border: 3px solid rgb(12,45,12);
@@ -119,12 +120,12 @@ iframe {
     text-align: center;
 }
 
-.loopingExtra {
+.loopingMain {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 70px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .recital {
@@ -132,12 +133,12 @@ iframe {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 50px;
+    margin: 0px;
 }
 
 .recital p {
-    font-size: 24px;
-    max-width: 1150px;
+    font-size: 18px;
+    max-width: 784px;
     text-align: center;
     padding: 20px;
 }
@@ -151,7 +152,8 @@ iframe {
 }
 
 .recitalExcerpts p {
-    max-width: 600px;
+    max-width: 520px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -159,6 +161,7 @@ iframe {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .tesserae {
@@ -171,8 +174,10 @@ iframe {
     margin: 40px auto;
 }
 
-.tesserae p{
-    width: 800px;
+.tesserae p, .tesserae a {
+    max-width: 800px;
+    min-width: 100px;
+    margin: 10px;
 }
 
 .recList {

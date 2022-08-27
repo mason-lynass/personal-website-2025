@@ -28,7 +28,7 @@
     text-align: center;
     text-transform: lowercase;
     text-decoration: none;
-    background-image: url(images/washiGreen.bmp);
+    background-image: url(../images/washiGreen.bmp);
     padding: 40px 0;
     margin: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,6 +58,6 @@
 }
 
 html {
-    background-image: url(images/m4aod-album-art-light.png);
+    background-image: url(../images/m4aod-album-art-light.png);
 }
 
