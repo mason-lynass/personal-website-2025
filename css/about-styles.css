@@ -112,3 +112,19 @@ p {
     width: 1000px;
     height: 1000px;
 }
+
+@media screen and (max-width: 1005px) {
+    .slContainer {
+        width: 600px;
+        height: 600px;
+    }
+    
+    .slide img {
+        width: 600px;
+        height: 100%;
+    }
+
+    p {
+        font-size: 1.6vw;
+    }
+}

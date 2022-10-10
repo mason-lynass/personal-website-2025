@@ -41,17 +41,18 @@ hr {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .liveLooping {
     border: 3px solid rgb(12,45,12);
+    width: 45%;
 }
 
 .liveLooping p, ul, li {
-    max-width: 700px;
     padding: 30px 0 0 0;
     text-align: center;
+    margin: 0 10px;
 }
 
 .liveLooping ul {
@@ -73,8 +74,12 @@ hr {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 20px 50px;
     margin: 40px;
+}
+
+.m4aodCopy {
+    width: 55%;
 }
 
 .unrealEngine {
@@ -82,8 +87,12 @@ hr {
     flex-flow: row wrap-reverse;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 20px 50px;
     margin: 40px;
+}
+
+.uetext {
+    width: 50%;
 }
 
 .unrealEngine p {
@@ -107,7 +116,7 @@ hr {
 
 .fsText {
     flex: 0 1 auto;
-    width: 700px;
+    width: 45%;
     padding: 10px 20px;
     text-align: center;
     font-size: 14px;
@@ -118,5 +127,42 @@ hr {
     padding: 10px 20px;
     text-align: center;
     border: 3px solid rgb(12,45,12);
-    max-width: 680px;
+    /* max-width: 680px; */
+}
+
+@media screen and (max-width: 910px){
+    .mainText div {
+        margin: 5%;
+    }
+    
+    .mainText {
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        padding: 5%;
+        margin: 5% 0 0 0;
+        border: 3px solid black;
+    }
+
+    .someThings {
+        font-size: 1.7vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+
+    .fBox, .fsText, .uetext {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1603px) {
+    .liveLooping {
+        width: 90%;
+    }
+
+    .binkLooper iframe {
+        width: 100%;
+    }
 }
