@@ -1,159 +1,258 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mason Lynass - Audio Engineering</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Corben">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Palanquin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="./css/ae-styles.css" />
     <link rel="stylesheet" href="./css/page-top-styles.css" />
 </head>
 <script defer src="script.js"></script>
+
 <body>
     <header>
-        <a class="otherPage" id="MLHeader" href="./index.html">Mason Lynass</a>
+        <a class="otherPage" id="MLHeader">Mason Lynass</a>
         <div class="nav">
-            <a class='otherPage dropdownButton' id="dropdownButton">menu</a>
+            <a class="otherPage dd" href="./software-engineering.html">Software Engineering</a>
+            <a class="activePage dd" href="./audio-engineering.html">Audio Engineering</a>
+            <a class="otherPage dd" href="./sound-design.html">Sound Design</a>
+            <a class="otherPage dd" href="./music-production.html">Music Production</a>
+            <a class="otherPage dd" href="./about.html">About</a>
         </div>
     </header>
-<!--new album-->
-    <div class="m4aod" id="m4aod">
-    <!-- <img class="m4aodArt" src="./images/m4aod-album-art-dark.png"></img> -->
-        <div class="m4aodText" id="m4aodText">
-            <h2>My new album</h2><h1>"Music for an Ordinary Day"</h1><h2>is out now!</h2><h2>---</h2>
-            <a href="https://masonlynass.bandcamp.com/" rel="noreferrer noopener" target="_blank">click here to listen</a><!--this should look like a button-->
+    <!--new album-->
+    <div id="pageLinks">
+        <a href="#m4containerNew" id="blue">My music</a>
+        <a href="#SP" id="green">Sample Pack</a>
+        <a href="#llTitle" id="yellow">Adventures in Live Looping</a>
+        <a href="#MRecital" id="red">Masters Recital</a>
+        <a href="#tesserae" id="pink">Tesserae</a>
+    </div>
+    <!-- new -->
+    <div class="blue">
+        <h1 class="sectionTitle">My music</h1>
+        <div id="m4containerNew">
+            <div id="m4aodtextNew" class="">
+                <p>Over the past two years I've enjoyed learning about audio engineering, synthesis, sound design, and
+                    various facets of electronic music. I've been heavily influenced by ambient and new-classical
+                    electronic musicians, from Brian Eno and Suzanne Ciani to the infinite variety of current music
+                    makers.</p>
+                <p>I've had limitless fun using MIDI devices and digital instruments in Ableton Live to create musical
+                    environments inspired by nature and life in the city. Some deep over-thinking of my personal
+                    music-making process inspired me to develop a system of generative music, so that I could focus on
+                    instrumentation, space, and character, instead of writing pitches and rhythms. Each piece of music
+                    on this album was generated from sets of rules determining things like pitch, rhythm, etc. using
+                    elements of chance and randomness, so that every performance generates a unique musical output.</p>
+                <p>As the musical director of sorts, when I perform this music I can't anticipate exactly what will be
+                    generated, which makes performing so exciting to me! It feels like a duet between myself and the
+                    computer - except I also programmed the computer, I guess.</p>
+            </div>
+            <div id="newm4flexNew">
+                <iframe id="m4aodBCNew"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1427149775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                seamless><a href="https://masonlynass.bandcamp.com/album/music-for-an-ordinary-day">Music for an Ordinary
+                    Day by Mason Lynass</a></iframe>
+                <div>
+                    <iframe width="784" height="441"
+                        src="https://www.youtube.com/embed/videoseries?list=PLnkdScsTrJPPX7OCdjxBxrYGVJncwywha"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- old video flexbox-->
+            <!-- <div class="m4aodVideoFlexbox" id="m4aodVideoFlexbox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s1nRq88f_BE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mFYA1khyY-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hY-eDHDDGhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe style="border: 0; width: 560px; height: 435px;" src="https://bandcamp.com/VideoEmbed?track=1072655644&bgcol=ffffff&linkcol=0687f5" mozallowfullscreen="1" webkitallowfullscreen="1" allowfullscreen="1" seamless></iframe>
+            </div> -->
         </div>
     </div>
-    <div class="m4aodVideoFlexbox" id="m4aodVideoFlexbox">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/s1nRq88f_BE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mFYA1khyY-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/hY-eDHDDGhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <!--sample pack-->
     <hr>
-<!--sample pack-->
-    <div class="samplePack" id="samplePack">
-        <img class="samplePackImage" src="./images/mason's-percussion.jpg"></img>
-        <div>
-        <div class="samplePackText" id="samplePackText"> 
-        <h2 class="sectionTitle">sample pack - Mason's Percussion</h2> 
-        <p>I spent a day at Johnny Goss' Dandelion Gold studio to record every small & handheld percussion instrument I own (and a few of Johnny's things too). We recorded more than 60 instruments with a wide variety of microphones. I poured over the audio we recorded to cut one shots and loops, then organized everything into a cohesive, high quality sample pack.</p>
-        <p>We used an AEA R88 mk2, a WA-251, a U67, and a pair of MXL V67s to record all of these instruments:</p>
-        </div>
-        <div class="spList" id="spList">
-        <div class="spList1" id="spList1">
-        <ul>Cymbal & Gong:
-            <li> 17" Zildjian K Dark Thin Crash</li>
-            <li>18" Zildjian Kerope Crash</li>
-            <li>24" Keplinger stainless steel Cymbal</li>
-            <li>24" Steve Weiss wind Gong</li>
-            <li>two pair of finger cymbals</li>
-        </ul>
-        <ul>Handheld:
-            <li>cabasa</li>
-            <li>wooden frog</li>
-            <li>guiro</li>
-            <li>ratchet</li>
-            <li>singing bowl (C4)</li>
-            <li>slapstick</li>
-            <li>vibraslap</li>
-        </ul>
-        <ul>Hit:
-            <li>almglocken</li>
-            <li>two pair of claves</li>
-            <li>a small collection of cowbells</li>
-            <li>Abel, Sabian, and toy triangles</li>
-            <li>woodblocks</li>
-            <li>gankogui</li>
-            <li>qraqeb</li>
-            <li>a three tone bell my mom found at a flea market</li>
-            <li>Ribbon Crasher</li>
-        </ul>
-        </div>
-        <div class="spList2" id="spList2">
-        <ul>Shake:
-            <li>so many different shakers</li>
-            <li>a small family of Altoids tin shakers</li>
-            <li>two angklung</li>
-            <li>duck & elephant bells</li>
-            <li>Indian ankle bells</li>
-            <li>Flexatone</li>
-            <li>three sets of goat hooves</li>
-            <li>two shekere</li>
-            <li>sleigh bells</li>
-            <li>thunder tube</li>
-            <li>wind chimes</li>
-        </ul>
-        <ul>Tambourines:
-            <li>Black Swamp classical tambourine (copper jingles)</li>
-            <li>two Hat Tricks</li>
-            <li>a few headless tambourines</li>
-            <li>Tambouraca</li>
-            <li>Kanjira</li>
-        </ul>
-        <ul>Drums:
-            <li>Chinese tom</li>
-            <li>djembe</li>
-            <li>udu</li>
-        </ul>
-        </div>
+    <div id="SP" class="green SP">
+        <h2 class="sectionTitle">Sample Pack - Mason's Percussion</h2>
+        <div class="samplePack" id="samplePack">
+            <img class="samplePackImage" src="./images/mason's-percussion.jpg"></img>
+            <div class="">
+                <div class="samplePackText" id="samplePackText">
+                    
+                    <p>I spent a day at Johnny Goss' Dandelion Gold studio to record every small & handheld percussion
+                        instrument I own (and a few of Johnny's things too). We recorded more than 60 instruments with a
+                        wide variety of microphones. I poured over the audio we recorded to cut one shots and loops, then
+                        organized everything into a cohesive, high quality sample pack.</p>
+                    <p>We used an AEA R88 mk2, a WA-251, a U67, and a pair of MXL V67s to record all of these instruments:
+                    </p>
+                </div>
+                <div class="spList" id="spList">
+                    <div class="spList1" id="spList1">
+                        <ul>Cymbal & Gong:
+                            <li> 17" Zildjian K Dark Thin Crash</li>
+                            <li>18" Zildjian Kerope Crash</li>
+                            <li>24" Keplinger stainless steel Cymbal</li>
+                            <li>24" Steve Weiss wind Gong</li>
+                            <li>two pair of finger cymbals</li>
+                        </ul>
+                        <ul>Handheld:
+                            <li>cabasa</li>
+                            <li>wooden frog</li>
+                            <li>guiro</li>
+                            <li>ratchet</li>
+                            <li>singing bowl (C4)</li>
+                            <li>slapstick</li>
+                            <li>vibraslap</li>
+                        </ul>
+                        <ul>Hit:
+                            <li>almglocken</li>
+                            <li>two pair of claves</li>
+                            <li>a small collection of cowbells</li>
+                            <li>Abel, Sabian, and toy triangles</li>
+                            <li>woodblocks</li>
+                            <li>gankogui</li>
+                            <li>qraqeb</li>
+                            <li>a three tone bell my mom found at a flea market</li>
+                            <li>Ribbon Crasher</li>
+                        </ul>
+                    </div>
+                    <div class="spList2" id="spList2">
+                        <ul>Shake:
+                            <li>so many different shakers</li>
+                            <li>a small family of Altoids tin shakers</li>
+                            <li>two angklung</li>
+                            <li>duck & elephant bells</li>
+                            <li>Indian ankle bells</li>
+                            <li>Flexatone</li>
+                            <li>three sets of goat hooves</li>
+                            <li>two shekere</li>
+                            <li>sleigh bells</li>
+                            <li>thunder tube</li>
+                            <li>wind chimes</li>
+                        </ul>
+                        <ul>Tambourines:
+                            <li>Black Swamp classical tambourine (copper jingles)</li>
+                            <li>two Hat Tricks</li>
+                            <li>a few headless tambourines</li>
+                            <li>Tambouraca</li>
+                            <li>Kanjira</li>
+                        </ul>
+                        <ul>Drums:
+                            <li>Chinese tom</li>
+                            <li>djembe</li>
+                            <li>udu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="samplesLink" id="samplesLink">
-        <a href="">get the samples</a><!--link to separate unlinked page where I sell samples-->
+            <a href="">download samples</a>
+            <!--link to separate unlinked page where I sell samples-->
         </div>
-    </div></div>
-    <hr>
-<!--sound design-->
-    <div class="soundDesign" id="soundDesign">
-        <p>I've done some freelance sound design work for video production companies, animators, and illustrators.</p><p>Head over to the <a href="">sound design page</a> for more.</p>
     </div>
+    <!--live looping stuff-->
     <hr>
-<!--live looping stuff-->
-    <div class="llTitle">
-        <h2 class="sectionTitle">adventures in live looping</h2>
-        <p>While I worked towards my Masters degree at the University of Washington, I developed an interest in live looping, inspired by loopers like BinkBeats, Reggie Watts, and Marc Rebillet. <br><br> My live looping projects helped me to become familiar with Ableton Live, and I learned about automation, scripting, and all kinds of related music technology ideas.</p><!--talk about live looping-->
+    <div class="yellow">
+        <h2 class="sectionTitle">Adventures in live looping</h2>
+        <div id="llTitle" class="llTitle">
+            <p class="">While I worked towards my Masters degree at the University of Washington, I developed an
+                interest in live
+                looping, inspired by loopers like BinkBeats, Reggie Watts, and Marc Rebillet. <br><br> My live looping
+                projects helped me to become familiar with Ableton Live, and I learned about automation, scripting, and all
+                kinds of related music technology ideas.</p>
+            <!--talk about live looping-->
+        </div>
+        <div class="loopingMain" id="loopingMain">
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/ef1V2zB8JcE" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/-FqAtXZw2W4" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/BpQ6DuPUTMc" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/R9dsdO6GjWk" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="loopingMain" id="loopingMain">
-        <iframe width="784" height="441" src="https://www.youtube.com/embed/ef1V2zB8JcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="784" height="441" src="https://www.youtube.com/embed/-FqAtXZw2W4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="784" height="441" src="https://www.youtube.com/embed/BpQ6DuPUTMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="784" height="441" src="https://www.youtube.com/embed/R9dsdO6GjWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <!--masters recital-->
     <hr>
-<!--masters recital-->
-    <h2 class="sectionTitle">Masters Recital</h2>
+    <h2 id="MRecital" class="sectionTitle">Masters Recital</h2>
     <div class="recital" id="recital">
-        <iframe width="784" height="441" src="https://www.youtube.com/embed/lmDb-7AgY9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>To celebrate my graduation from the University of Washington,<br>I presented some music I had been studying and practicing for more than a year!</p>
+        <iframe width="784" height="441" src="https://www.youtube.com/embed/lmDb-7AgY9Q" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p class="">To celebrate my graduation from the University of Washington,<br>I presented some music
+            I had been studying
+            and practicing for more than a year!</p>
     </div>
     <div class="recitalExcerpts" id="recitalExcerpts">
         <div class="fote" id="fote">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zxSm2-P9nCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Here's my recording of The Fall of the Empire, Frederic Rzewski's eight movement speaking percussionist solo, composed for Allen Otte in 2007. </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zxSm2-P9nCo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Here's my recording of The Fall of the Empire, Frederic Rzewski's eight movement speaking percussionist
+                solo, composed for Allen Otte in 2007. </p>
         </div>
-        <div class ="ttf" id="ttf">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/rgutRQ8_i_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>I made this video of Tapping the Furnace, a speaking percussionist solo composed by Dorothy Hindman in 2007.</p>
+        <div class="ttf" id="ttf">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rgutRQ8_i_c"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>I made this video of Tapping the Furnace, a speaking percussionist solo composed by Dorothy Hindman in
+                2007.</p>
         </div>
         <div class="nyc" id="nyc">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/R9dsdO6GjWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>This is the first movement of Steve Reich's "New York Counterpoint."</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R9dsdO6GjWk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>This is the first movement of Steve Reich's "New York Counterpoint."</p>
         </div>
     </div>
+    <!--tesserae-->
     <hr>
-<!--tesserae-->
+    <h1 class="sectionTitle">Tesserae</h1>
     <div class="tesserae" id="tesserae">
-        <iframe width="896" height="504" src="https://www.youtube.com/embed/MZsATA59TEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div>
-            <h2 class="sectionTitle">Tesserae</h2>
+        <iframe width="896" height="504" src="https://www.youtube.com/embed/MZsATA59TEc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div class="">
             <p>Here's my performance of the quartet version of my composition "Tesserae."</p>
-            <p>This piece won the Portland Percussion Group Call for Scores in 2017, and is composed with flexibility in mind: it can be performed as a quartet, or a trio (without the drumset part).</p>
+            <p>This piece won the Portland Percussion Group Call for Scores in 2017, and is composed with flexibility in
+                mind: it can be performed as a quartet, or a trio (without the drumset part).</p>
             <p>All audio/video recording, editing, and performance by me!</p>
+            <a class="tesserae" href="https://www.tapspace.com/percussion-ensemble/tesserae" rel="noreferrer noopener"
+                target="_blank">Sheet music is available from Tapspace.</a>
             <p>Many thanks to Tapspace for publishing my work, my first (not self-published) published composition!</p>
-            <a href="https://www.tapspace.com/percussion-ensemble/tesserae" rel="noreferrer noopener" target="_blank">Sheet music is available from Tapspace.</a>
         </div>
     </div>
+    <!--big list-->
     <hr>
-<!--big list-->
     <div class="recList" id="recList">
-        <p>if you're feeling nosy, <a href="./recordings-list.html">here's a list of everything</a> I've recorded that exists on the internet.</p>
+        <p>if you're feeling nosy, <a href="./recordings-list.html">here's a list of everything</a> I've recorded that
+            exists on the internet.</p>
     </div>
 </body>
+
 </html>
