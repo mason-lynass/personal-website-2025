@@ -6,14 +6,37 @@ h1, h2, a {
     text-align: center;
 }
 
+p {
+    font-size: 16px;
+}
+
 iframe {
     margin: 10px;
 }
 
-.sectionTitle {
-    font-size: 42px;
-    margin: 50px 0;
+.sectiontitle {
+    font-size: 60px;
+    padding: 40px 0;
+    margin: 0;
+    color: rgb(17, 70, 17);
 }
+
+#AETitle {
+    color: rgb(17, 70, 17);
+    margin: 40px auto;
+}
+
+/* .blue {
+    background-color: rgb(3, 74, 135);
+}
+
+.green {
+    background-color: rgb(18, 124, 86);
+}
+
+.yellow {
+    background-color: rgb(243, 148, 6);
+} */
 
 .m4aod {
     display: flex;
@@ -33,30 +56,40 @@ iframe {
     padding: 200px 10px;
 }
 
-.m4aod h2, .m4aod h1, .m4aod a {
-    color: white;
-}
+/* new */
 
-.m4aod h1 {
-    font-size: 42px;
-}
-
-.m4aod h2 {
-    font-size: 36px;
+#m4containerNew {
     margin: 0;
+    padding-bottom: 20px;
 }
 
-.m4aod a {
-    font-size: 24px;
+#m4aodtextNew {
+    width: 840px;
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto 40px auto;
 }
 
-.m4aodVideoFlexbox {
+#m4aodBCNew {
+    display: block;
+    width: 350px;
+    height: 470px;
+    border: 0;
+}
+
+#newm4flexNew {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 40px 20px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    
 }
+
+/* .m4aodVideoFlexbox {
+    display: flex;
+    flex-flow: row wrap;
+} */
 
 .samplePack{
     display: flex;
@@ -64,13 +97,19 @@ iframe {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 10px;
+    padding: 10px;
+    /* border: 3px solid black; */
 }
 
 .samplePack img {
     flex: 0 1 auto;
     max-width: 600px;
     min-width: 0px;
+}
+
+.border {
+    border: 5px solid rgb(12,45,12);
+    padding: 0 20px;
 }
 
 .samplePackText {
@@ -87,12 +126,31 @@ iframe {
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 14px;
+    color:rgb(17, 70, 17);
+    /* color: antiquewhite; */
 }
 
 .samplesLink {
     text-align: center;
-    font-size: 30px;
-    margin: 20px auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 20px;
+    width: 250px;
+    margin: 40px auto;
+    /* border: 3px solid rgb(17, 70, 17); */
+    border-radius: 50px;
+    background-color: rgb(18, 124, 86);
+}
+
+.samplesLink a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.SP {
+    padding: 20px 0;
 }
 
 .soundDesign {
@@ -103,7 +161,7 @@ iframe {
 
 .llTitle {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -115,7 +173,6 @@ iframe {
 .llTitle p {
     width: 800px;
     margin: 40px 20px;
-    border: 3px solid rgb(12,45,12);
     padding: 10px 20px;
     text-align: center;
 }
@@ -126,6 +183,7 @@ iframe {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 50px;
 }
 
 .recital {
@@ -133,11 +191,11 @@ iframe {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0px;
+    margin: 20px 0;
 }
 
 .recital p {
-    font-size: 18px;
+    font-size: 16px;
     max-width: 784px;
     text-align: center;
     padding: 20px;
@@ -148,7 +206,7 @@ iframe {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0 0 40px 0;
+    padding: 0 0 50px 0;
 }
 
 .recitalExcerpts p {
@@ -171,13 +229,13 @@ iframe {
     align-items: center;
     flex-wrap: wrap;
     align-items: top;
-    margin: 40px auto;
+    margin: 40px auto 70px auto;
 }
 
 .tesserae p, .tesserae a {
-    max-width: 800px;
-    min-width: 100px;
-    margin: 10px;
+    width: 630px;
+    padding: 5px;
+    text-align: center;
 }
 
 .recList {
