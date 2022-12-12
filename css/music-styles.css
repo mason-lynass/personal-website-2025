@@ -10,13 +10,15 @@ h2 {
 }
 
 #bgImage {
-    position: absolute;
-    opacity: .8;
-    width: 400%;
-    height: 410%;
-    /* top: -40px; */
-    /* left: -20px; */
-    z-index: -2;
+    min-height: 100%;
+   min-width: 1024px;
+   width: 100%;
+   height: auto;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   opacity: .8;
 }
 
 /* .afterNav::after {
