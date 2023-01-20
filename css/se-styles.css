@@ -283,3 +283,141 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+
+    hr {
+        margin: 15px;
+    }
+
+    .smallLine {
+        width: 50vw;
+    }
+
+    .mainText div {
+        margin: 3%;
+    }
+
+    .mainText {
+        margin: 0;
+    }
+ 
+    .mT {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 30px;
+    }
+
+    .mT h2 {
+        font-size: 20px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .mT p, .p2 {
+        font-size: 12px;
+        padding: 5px;
+        margin: 0;
+    }
+
+    #pageLinks {
+        margin-bottom: 10px;
+    }
+
+    .fantasySumo {
+        margin: 0 auto;
+    }
+
+    #fsBodyFlex {
+        margin: 0;
+    }
+
+    #fsBodyFlex p {
+        font-size: 12px;
+    }
+
+    #sumoImageFlex img, #sumoHome {
+        width: 90vw;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+    }
+
+    #bbb {
+        margin: 0;
+    }
+
+    #bbb p {
+        font-size: 12px;
+    }
+
+    #bbb img, #bbbImages img {
+        width: 90vw;
+    }
+
+    .mTitle {
+        font-size: 20px;
+    }
+
+    .biggerText {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    ul, li {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .binkLooper {
+        margin: 0 20px;
+    }
+
+    .binkLooper p {
+        font-size: 12px;
+    }
+
+    .ll {
+        gap: 0px;
+    }
+
+    .bigContainer {
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    .m4aod {
+        margin: 0;
+        gap: 0;
+        padding: 0 10px;
+    }
+
+    #m4aodCopy {
+        text-align: center;
+        width: 95%;
+    }
+
+    #m4aodCopy p, #uetext p, .otherVideo p, #extra p {
+        font-size: 12px;
+    }
+
+    .unrealEngine {
+        margin: 10px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .unrealEngine iframe {
+        width: 100%;
+    }
+
+    #otherVideos {
+        margin: 20px 0;
+    }
+
+    .otherVideo iframe {
+        width: 100%;
+    }
+}
+

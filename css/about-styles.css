@@ -171,3 +171,36 @@ p {
         font-size: 1.6vw;
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    .mainAbout {
+        margin: 10px;
+    }
+
+    #mainHeadshot {
+        margin: 0 20px;
+    }
+
+    #ACTitle {
+        font-size: 20px;
+    }
+
+    .contact {
+        margin: 0 auto;
+    }
+
+    .slContainer {
+        width: 90%;
+        height: 100%;
+    }
+    
+    .slide img {
+        width: 90vw;
+        height: 100%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

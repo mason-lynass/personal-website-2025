@@ -131,8 +131,30 @@ header {
         /* background-image: url(../images/m4aod-album-art-light.png); */
     }
 
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    .nav {
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 0px auto;
+        /* border: 3px solid black; */
+        /* background-image: url(../images/m4aod-album-art-light.png); */
+    }
+
+    .nav a {
+        margin: 5px auto;
+    }
+
+    header {
+        flex-flow: column nowrap;
+        margin: 0px auto;
+    }
+
     #MLHeader {
-        display: inline block;
+        display: block;
         margin: 10px auto;
     }
 }
@@ -148,9 +170,7 @@ header {
 
     .dropdownButton {
         width: 100px;
-    }
-
-    
+    }    
 }
 
 

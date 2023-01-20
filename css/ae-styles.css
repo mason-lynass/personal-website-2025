@@ -242,3 +242,99 @@ iframe {
     margin: 40px 40px;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+
+    p {
+        font-size: 12px;
+    }
+
+    ul {
+        font-size: 10px;
+    }
+
+    hr {
+        margin: 20px;
+    }
+    
+    .sectionTitle {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    #m4aodtextNew p {
+        font-size: 12px;
+        
+    }
+
+    #m4containerNew {
+        width: 90vw;
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+
+    #m4aodtextNew {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #newm4flexNew iframe {
+        width: 100%;
+        margin: auto;
+    }
+
+    .SP {
+        padding: 0;
+    }
+
+    #samplesLink {
+        margin: 10px auto;
+    }
+
+    .yellow {
+        padding: 10px;
+    }
+
+    .llTitle p {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .recital {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .recital iframe, .recitalExcerpts iframe {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .recital p, .recitalExcerpts p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .recitalExcerpts {
+        padding: 5px;
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    #tesserae {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .tesseraeText {
+        width: 90%;
+        margin: 0;
+    }
+
+    .tesseraeText p, .tesseraeText a {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
