@@ -26,7 +26,7 @@
     margin: auto;
     padding: 10px 50px;
     width: 980px;
-    border-radius: 200px;
+    border-radius: 150px;
     background-color: antiquewhite;
     
     /* border: 5px solid black; */
@@ -48,7 +48,7 @@
 }
 
 .p2 {
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .fantasySumo {
