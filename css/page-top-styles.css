@@ -151,6 +151,7 @@ header {
     header {
         flex-flow: column nowrap;
         margin: 0px auto;
+        padding: 5px;
     }
 
     #MLHeader {

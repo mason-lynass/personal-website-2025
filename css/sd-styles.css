@@ -154,3 +154,105 @@ iframe {
     max-width: 600px;
     max-height: 600px;
 }
+
+@media screen and (max-width: 600px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    #sdMain {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .sdMain p {
+        min-width: 0;
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .sdReel {
+        min-width: 0;
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .norm {
+        margin: 10px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    #pageLinks {
+        margin-bottom: 10px;
+    }
+
+    #pageLinks a {
+        font-size: 18px;
+    }
+
+    #sdFreelance {
+        margin: 10px;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    #sdVidFlex {
+        margin: 0;
+    }
+
+    .sdPVidwText {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    .sdPVidwText iframe {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    hr {
+        margin: 30px;
+    }
+
+    #samplePacks {
+        margin: 10px;
+    }
+
+    #spText {
+        padding: 0;
+    }
+
+    #spText p {
+        font-size: 14px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    #trifilm {
+        margin: 0 10px;
+    }
+
+    #myMusic {
+        margin: 0 10px;
+    }
+
+    #myMusicText {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #myMusicText p {
+        font-size: 12px;
+    }
+
+    #m4aodArt {
+        width: 100%;
+    }
+}

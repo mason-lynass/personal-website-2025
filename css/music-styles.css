@@ -69,3 +69,27 @@ h2 {
 .recList {
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 600px) {
+
+    .introCopy {
+        margin: 0 10px;
+    }
+
+    .introCopy p {
+        font-size: 16px;
+    }
+
+    #bigFlexBox {
+        margin: 0 10px;
+    }
+
+    #bigFlexBox p {
+        font-size: 10px;
+    }
+
+    #bigFlexBox iframe {
+        width: 100%;
+    }
+
+}
