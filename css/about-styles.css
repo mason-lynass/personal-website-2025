@@ -1,3 +1,12 @@
+#whyareyouhere p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#whyareyouhere {
+    margin: 50px;
+}
+
 h1 {
     font-size: 36px;
     text-align: center;
@@ -58,6 +67,12 @@ p {
     color: rgb(12, 45, 12);
 }
 
+#bottomButtons {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+}
+
 .contact {
     display: block;
     text-align: center;
@@ -92,7 +107,7 @@ p {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url(../images/m4aod-album-art-dark.png);
+    background-image: url(../images/m4aod-album-art-dark.jpg);
     z-index: -1;
     opacity: .8;
 }
