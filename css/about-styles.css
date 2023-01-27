@@ -67,11 +67,7 @@ p {
     color: rgb(12, 45, 12);
 }
 
-#bottomButtons {
-    display: grid;
-    grid-template-columns: 48% 48%;
-    gap: 4%;
-}
+
 
 .contact {
     display: block;
@@ -80,6 +76,8 @@ p {
     margin: 40px auto;
     font-family: 'Montserrat';
     font-size: 18px;
+    width: 100px;
+    height: 20px;
     color: antiquewhite;
     text-transform: uppercase; 
     text-decoration: none; 
@@ -90,6 +88,12 @@ p {
 .contact:hover {
     color: antiquewhite;
     background-color: rgb(18, 124, 86);
+}
+
+#bottomButtons {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
 }
 
 .leftSide {
