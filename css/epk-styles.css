@@ -1,0 +1,105 @@
+#epkFirst {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 95%;
+    margin: 20px auto;
+}
+
+#epkTop {
+    margin: 0 auto;
+}
+
+#epkTopPic {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.space {
+    width: 10px;
+}
+
+#meOnStage {
+    width: 600px;
+    margin: 10px auto;
+}
+
+#reviews {
+    width: 600px;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bio {
+    width: 600px;
+    margin: 20px;
+    font-size: 16px;
+}
+
+#epkContact {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 300px;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+}
+
+#m4aod {
+    margin: 20px;
+    height: 410px;
+}
+
+#firstMediaFlex {
+    background-image: url(../images/m4aod-album-art-light.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px 50px;
+    align-items: center;
+    margin: 20px auto;
+    width: 95%;
+}
+
+#fMFYT iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+#performances {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#downloadPics {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#pictures {
+    background-image: url(../images/memory-terrain-art.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 5%;
+    padding: 10px 0;
+}
+
+#photoGrid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    margin: 20px 5%;
+}
+
+.oneColumn img {
+    width: 100%;
+}
