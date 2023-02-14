@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mason Lynass - About</title>
-    <link rel="stylesheet" href="./css/home-styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Corben">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Palanquin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./css/page-top-styles.css" />
+    <link rel="stylesheet" href="./css/about-styles.css" />
 </head>
+
 <body>
-    <img src="/images/m4aod-album-art-light.png" id="bgImage"/>
     <header>
-        <a id="header" href="./index.html">
-            <p id="name">Mason Lynass</p>
-        </a>
+        <a class="otherPage" id="MLHeader">Mason Lynass</a>
         <div class="nav">
-            <!--<a class="activePage" href="./index.html">Home</a>-->
-            <a href="./software-engineering.html">Software Engineering</a>
-            <a href="./audio-engineering.html">Audio Engineering</a>
-            <a href="./sound-design.html">Sound Design</a>
-            <a href="./music-production.html">Music Production</a>
-        </div>
-        <div id="bottomLinks">
-            <a id="BL" href="./about.html">about</a>
-            <a id="BL" href="mailto:masonlynass@gmail.com">contact</a>
+            <!-- <a class='otherPage dropdownButton' id="dropdownButton">menu</a> -->
+            <a class="otherPage dd" href="./software-engineering.html">Software Engineering</a>
+            <a class="otherPage dd" href="./audio-engineering.html">Audio Engineering</a>
+            <a class="otherPage dd" href="./sound-design.html">Sound Design</a>
+            <a class="otherPage dd" href="./music-production.html">Music Production</a>
+            <a class="activePage dd" href="./index.html">About</a>
         </div>
     </header>
+    <!--put this in a box-->
+    <div class="mainAbout">
+        <div class="leftSide" id="leftSide">
+            <div class="aboutCopy" id="aboutCopy">
+                <h2 id="ACTitle">Mason Lynass is a software engineer, music creator, and A/V producer, currently based
+                    in Seattle, WA.</h2>
+                <p>Mason completed a 15-week Software Engineering course at the <a
+                        href="https://flatironschool.com/">Flatiron School</a>, developing and deploying Full-Stack web
+                    applications and exploring JavaScript, React.js, Ruby on Rails, SQL & PostgreSQL, Sinatra &
+                    ActiveRecord, HTML, CSS, and Git. He is currently learning new languages & frameworks, building
+                    projects with collaborators, and transitioning to a career in Software Engineering.</p>
+                <p>Mason graduated from the University of Washington with a Master of Music degree in percussion
+                    performance. At UW, Mason studied with Dr. Bonnie Whiting, played in the Partch Ensemble and various
+                    UW ensembles, and recorded and released a recital of solo percussion repertoire in June of 2020.</p>
+                <p>Mason has performed as a soloist and as an ensemble member in venues and concert halls across the
+                    country. As a soloist, Mason’s work was most recently featured at his Masters recital, at the Racer
+                    Sessions, and Seattle’s John Cage Musicircus. Outside of his solo work, Mason has played festivals
+                    and toured the west coast with Señor Fin and Baby Jessica, performed at the Percussive Arts Society
+                    International Convention with the UNT Percussion Ensemble and the Santa Clara Vanguard, and hung out
+                    at SoSI, Chosen Vale, and Inuksuit NYC.</p>
+                <p>Mason won the Portland Percussion Group’s Call for Scores with his work Tesserae, composed for
+                    percussion trio or quartet. The Portland Percussion Group premiered Tesserae in May of 2017, and the
+                    piece was published through Tapspace in 2019.</p>
+                <p>Mason earned a Bachelor of Music degree in percussion performance from the University of North Texas,
+                    where he studied with Christopher Deane, Paul Rennick, and Ed Soph.</p>
+            </div>
+            <div id="bottomButtons">
+                <a class="contact" href="mailto:masonlynass@gmail.com">Contact</a>
+                <a class="contact" href="./Resume_for_Humans-Mason_Lynass_1:23.pdf">Resumé</a>
+            </div>
+
+            <!--<p>hello what's up</p>-->
+        </div>
+        <img class="mainHeadshot" id="mainHeadshot" src="./images/PAS_headshot.jpg"
+            alt="headshot of Mason Lynass"></img><!--class="mainHeadshot" id="mainHeadshot"-->
+    </div>
+    <section class="slWrapper" id="galleryOfMe">
+        <button class="slArrow" id="slArrowPrev">
+            &#8249;
+        </button>
+        <button class="slArrow" id="slArrowNext">
+            &#8250;
+        </button>
+        <ul class="slContainer" id="slContainer">
+            <li class="slide arboretum"><img src="./images/mason-at-arboretum.jpg"></li>
+            <li class="slide diamond"><img src="./images/diamond-marimba.jpg"></li>
+            <li class="slide drumset"><img src="./images/drumset-bw.jpg"></li>
+            <li class="slide werewolf"><img src="./images/werewolf-avatar.jpg"></li>
+            <li class="slide inuksuit"><img src="./images/inuksuit.jpg"></li>
+            <li class="slide kaytra"><img src="./images/kaytranada-rec.jpg"></li>
+            <li class="slide apple"><img src="./images/mason-apple.JPG"></li>
+            <li class="slide closeDrumset"><img src="./images/close-drumset-bw.jpg"></li>
+            <!-- <li class="slide flower"><img src="./images/me-w-flower.jpg"></li> -->
+            <li class="slide PAS"><img src="./images/PAS_headshot_square.jpg"></li>
+        </ul>
+    </section>
 </body>
 <script src="script.js"></script>
+
 </html>
