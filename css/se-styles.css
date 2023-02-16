@@ -106,6 +106,43 @@
     /* max-width: 680px; */
 }
 
+#iHTopFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+#iceHonkyAbout {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 20px auto;
+    width: 800px;
+}
+
+#iceHonkyIntro {
+    text-align: center;
+    color:rgb(17, 70, 17);
+}
+
+.ihi {
+    width: 600px;
+    margin: 20px 0;
+}
+
+#ihiFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#iceHonkyText {
+    width: 800px;
+    margin: 10px auto;
+}
+
 #bbb {
     display: flex;
     flex-flow: row wrap;
@@ -210,6 +247,12 @@
     text-align: left;
 }
 
+#m4aodBCReal {
+    border: 0; 
+    width: 350px; 
+    height: 470px
+}
+
 .unrealEngine {
     display: flex;
     flex-flow: column nowrap;
@@ -271,6 +314,10 @@
     .fBox, .fsText, .uetext {
         width: 90%;
     }
+
+    #sumoHome, #iceHonkyAbout, #bbbHome, #bbbImages img, .mT, #ihiFlex img {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 1603px) {
@@ -299,6 +346,10 @@
 
     .mainText {
         margin: 0;
+    }
+
+    .p1 hr {
+        margin: 20px;
     }
  
     .mT {
@@ -332,7 +383,12 @@
         margin: 0;
     }
 
-    #fsBodyFlex p {
+    .fBox {
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    #fsBodyFlex p, #iHTopFlex p {
         font-size: 12px;
     }
 
@@ -342,6 +398,11 @@
 
     .sectionTitle {
         font-size: 30px;
+    }
+
+    #iceHonkyIntro {
+        font-size: 16px;
+        margin: 0 20px;
     }
 
     #bbb {
@@ -402,6 +463,10 @@
         font-size: 12px;
     }
 
+    #m4aodBCReal {
+        width: 300px;
+    }
+
     .unrealEngine {
         margin: 10px;
         padding: 10px;
@@ -417,6 +482,11 @@
     }
 
     .otherVideo iframe {
+        width: 100%;
+    }
+
+    .binkLooper iframe {
+        height: 50vw;
         width: 100%;
     }
 }

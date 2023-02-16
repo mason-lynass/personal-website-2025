@@ -81,6 +81,7 @@
   </div>
   <div id="pageLinks">
     <a href="#fantasySumo" id="blue">Fantasy Sumo</a>
+    <a href="#iceHonky" id="green">Ice Honky</a>
     <a href="#bbathroomb" id="yellow">Better Bathroom Bureau</a>
     <a href="#music" id="red">Musical programming</a>
     <a href="#other" id="pink">Other projects</a>
@@ -148,7 +149,36 @@
       <img class="border" src="images/fs-db.jpg" />
       <img class="border" src="images/fs-rules.jpg" />
     </div>
-
+  </div>
+  <hr />
+  <div id="iceHonky">
+    <h1 class="sectionTitle">Ice Honky</h1>
+    <div id="iceHonkyIntro">
+      <h3><a href="https://icehonky.net">Ice Honky</a> is an NHL Scoreboard website for goal horn lovers.</h3>
+      <h3>Whenever a team scores in real time, their goal horn sounds!</h3>
+    </div>
+    <div id="iHTopFlex">
+      <img class="border" id="iceHonkyAbout" src="images/ice-honky-about.png" />
+      <div id="iceHonkyText">
+        <p>Ice Honky was developed with React.js, which easily handles constantly changing game data. The site requests
+          data from an external NHL Scores API at a set interval whenever games are happening - we haven't found an API
+          that allows WebSocket connections yet. Then we use the consistently refreshing data to display scores and game
+          information.</p>
+        <p>If a team has scored since our last refresh, the site will display a modal that shows the most recent goal
+          scored, and sound that team's goal horn. I like to use the site to keep track of game scores while working on
+          other projects - I can just listen for a goal horn to know when my team has scored!</p>
+        <p>We've also set up a page with all of the goal horns, so users can hear any horn whenever they want, and try
+          to
+          find harmonious (or extremely dissonant) combinations of horns. We're using useSound, a custom React hook, to
+          trigger audio events, whether they come from user input or a change in the data we receive from the API.</p>
+        <p>Ice Honky is a collaboration between myself and <a href="https://lexdotcom.com/">Alex Naughton</a>, an
+          excellent collaborator, full of fun ideas and ingenious solutions.</p>
+      </div>
+    </div>
+    <div id="ihiFlex">
+      <img class="border ihi" id="iceHonkyHome" src="images/ice-honky-main.png" />
+      <img class="border ihi" id="iceHonkyHorns" src="images/ice-honky-horns.png" />
+    </div>
   </div>
   <hr />
   <div id="bbathroomb">
@@ -283,7 +313,7 @@
           <h2 class="biggerText">
             Check out my most recent album,<br />Music for an Ordinary Day
           </h2>
-          <iframe style="border: 0; width: 350px; height: 470px"
+          <iframe id="m4aodBCReal"
             src="https://bandcamp.com/EmbeddedPlayer/album=1427149775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
             seamless><a href="https://masonlynass.bandcamp.com/album/music-for-an-ordinary-day">Music for an Ordinary
               Day by Mason Lynass</a></iframe>
@@ -351,7 +381,11 @@
       <h2 class="biggerText">Check out some demo videos I've made for other projects I worked on at Flatiron:</h2>
       <div id="otherVideos">
         <div class="otherVideo">
-          <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/794365440?h=83fe77e3e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RESTly walkthrough"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <div style="padding:75% 0 0 0;position:relative;"><iframe
+              src="https://player.vimeo.com/video/794365440?h=83fe77e3e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RESTly walkthrough"></iframe></div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
           <p><a rel="noreferrer noopener" href="https://github.com/mason-lynass/RESTly-frontend">RESTly</a> (get it?) -
             a San Diego-centered app to help users find great food around the city <br><br>
             Developed
@@ -359,7 +393,11 @@
             using React.js and Ruby.</p>
         </div>
         <div class="otherVideo">
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/794365969?h=428b709da5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="seattle-HD 720p"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+              src="https://player.vimeo.com/video/794365969?h=428b709da5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+              style="position:absolute;top:0;left:0;width:100%;height:100%;" title="seattle-HD 720p"></iframe></div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
           <p><a rel="noreferrer noopener" href="https://github.com/Jaspreet9795/travel-guide">Seattle Travel Guide</a> -
             a TripAdvisor-y website for perusing destinations around Seattle. <br><br>
             Developed with
