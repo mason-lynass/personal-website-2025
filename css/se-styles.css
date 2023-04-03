@@ -56,15 +56,27 @@
     gap: 20px;
 }
 
+#private {
+    font-size: 12px;
+    max-width: 750px;
+    text-align: center;
+    margin: auto;
+    padding: 10px 20px;
+}
+
 #sumoIntro {
     color:rgb(17, 70, 17);
     text-align: center;
+    padding: 0 5%;
 }
 
 #fsBodyFlex {
     display: flex;
     flex-flow: row wrap;
     margin: 40px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 #sumoImageFlex {
@@ -77,7 +89,7 @@
 }
 
 #sumoImageFlex img {
-    width: 600px;
+    width: calc(25vw + 100px);
     height: 100%;
 }
 
@@ -85,18 +97,25 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    margin: 0 auto;
-    width: 800px;
+    margin: 0;
+    width: calc(30vw + 300px);
+    height: 100%;
 }
 
 .fsText {
     flex: 0 1 auto;
-    width: 800px;
+    width: 45%;
     padding: 10px 20px;
     text-align: left;
     font-size: 16px;
-    margin: auto;
+    margin: 0;
     /* border: 3px solid rgb(12,45,12); */
+}
+
+@media screen and (max-width: 1543px) {
+    .fsText {
+        width: 80%;
+    }
 }
 
 .fBox {
@@ -181,6 +200,23 @@
     font-size: 30px;
     text-align: center;
     color:rgb(17, 70, 17)
+}
+
+#useSound {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 50px 20px; 
+}
+
+#SeattleJS {
+    width: 600px;
+}
+
+#useSoundText {
+    width: 800px;
 }
 
 .ll {
@@ -298,9 +334,9 @@
         text-align: center;
         background-position: center;
         background-size: cover;
-        padding: 5%;
+        padding: 0%;
         margin: 5% 0 0 0;
-        border: 3px solid black;
+        border: 1px solid black;
     }
 
     .someThings {
@@ -398,6 +434,7 @@
 
     .sectionTitle {
         font-size: 30px;
+        padding: 15px;
     }
 
     #iceHonkyIntro {
@@ -409,7 +446,7 @@
         margin: 0;
     }
 
-    #bbb p {
+    #bbb p, #useSound p {
         font-size: 12px;
     }
 
@@ -429,6 +466,15 @@
     ul, li {
         font-size: 12px;
         padding: 10px 0;
+    }
+
+    #useSound {
+        margin: 20px;
+        gap: 20px;
+    }
+
+    #SeattleJS {
+        width: 100%;
     }
 
     .binkLooper {
@@ -465,6 +511,7 @@
 
     #m4aodBCReal {
         width: 300px;
+        height: 420px;
     }
 
     .unrealEngine {

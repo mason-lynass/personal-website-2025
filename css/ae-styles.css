@@ -256,10 +256,14 @@ iframe {
     hr {
         margin: 20px;
     }
+
+    #pageLinks {
+        margin: 0;
+    }
     
     .sectionTitle {
         font-size: 30px;
-        padding: 10px;
+        padding: 20px;
     }
 
     #m4aodtextNew p {
@@ -279,8 +283,18 @@ iframe {
         padding: 0;
     }
 
-    #newm4flexNew iframe {
+    #newm4flexNew {
+        margin: 10px 0;
+    }
+
+    #m4aodBCNew {
         width: 100%;
+        height: calc(90vw / (35/47))
+    }
+
+    #newm4flexNew div iframe {
+        width: 100%;
+        height: calc(90vw / (16/9));
         margin: auto;
     }
 
@@ -293,7 +307,7 @@ iframe {
     }
 
     .yellow {
-        padding: 10px;
+        padding: 2vw;
     }
 
     .llTitle p {
@@ -302,14 +316,20 @@ iframe {
         padding: 10px 0;
     }
 
-    .recital {
-        padding: 5px;
-        margin: 0;
+    .loopingMain {
+        gap: 0;
+        padding: 0;
     }
 
-    .recital iframe, .recitalExcerpts iframe {
+    .loopingMain iframe, #recital iframe, #recitalExcerpts iframe, #tesserae iframe {
         width: 100%;
-        margin: 10px auto;
+        height: calc(96vw / (16/9));
+        margin: 10px 0;
+    }
+
+    .recital {
+        padding: 2%;
+        margin: 0;
     }
 
     .recital p, .recitalExcerpts p {
@@ -318,14 +338,14 @@ iframe {
     }
 
     .recitalExcerpts {
-        padding: 5px;
+        padding: 2vw;
         margin: 0 auto;
-        width: 95%;
+        width: 96vw;
     }
 
     #tesserae {
-        margin: 10px auto;
-        width: 100%;
+        margin: 10px 2vw;
+        width: 96vw;
     }
 
     .tesseraeText {

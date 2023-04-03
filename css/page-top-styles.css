@@ -1,20 +1,11 @@
 * {
     /* font-family: 'EB Garamond', sans-serif; */
     font-family: 'Merriweather';
-    /* font-family: 'Nobile'; */
-    /* font-family: 'Lato'; */
-    /* font-family: 'Noto Sans'; */
-    /* font-family: 'Roboto'; */
 }
 
 .sectionTitle, #MLHeader, #pageLinks a, .nav a {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Montserrat';
-    /* font-family: 'Corben'; */
-    /* font-family: 'Wendy One'; */
-    /* font-family: 'Noto Serif'; */
-    /* font-family: 'Oswald'; (NO) */
-    /* font-family: 'Palanquin'; */
 }
 
 html {
@@ -145,7 +136,8 @@ header {
     }
 
     .nav a {
-        margin: 5px auto;
+        margin: 2px auto;
+        padding: 5px 20px;
     }
 
     header {
@@ -157,6 +149,7 @@ header {
     #MLHeader {
         display: block;
         margin: 10px auto;
+        
     }
 }
 

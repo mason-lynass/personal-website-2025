@@ -157,6 +157,10 @@ iframe {
 
 @media screen and (max-width: 600px) {
 
+    main {
+        padding: 2vw;
+    }
+
     p {
         font-size: 14px;
     }
@@ -174,7 +178,8 @@ iframe {
 
     .sdReel {
         min-width: 0;
-        width: 95vw;
+        width: 96vw;
+        height: calc(96vw / (16/9));
         margin: 0 auto;
     }
 
@@ -218,11 +223,11 @@ iframe {
     }
 
     hr {
-        margin: 30px;
+        margin: 20px;
     }
 
     #samplePacks {
-        margin: 10px;
+        margin: 10px 0px;
     }
 
     #spText {
@@ -235,17 +240,15 @@ iframe {
         padding: 0;
     }
 
-    #trifilm {
-        margin: 0 10px;
-    }
-
-    #myMusic {
-        margin: 0 10px;
+    #trifilm, #myMusic {
+        margin: 0;
+        padding-bottom: 0;
     }
 
     #myMusicText {
         min-width: 0;
         width: 100%;
+        padding: 10px;
     }
 
     #myMusicText p {
