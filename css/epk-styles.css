@@ -2,10 +2,10 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 2vw;
     align-items: center;
     width: 95%;
-    margin: 20px auto;
+    margin: 2vw auto;
 }
 
 #epkTop {
@@ -23,21 +23,21 @@
 }
 
 #meOnStage {
-    width: 600px;
+    max-width: 600px;
+    width: 90vw;
     margin: 10px auto;
 }
 
 #reviews {
-    width: 600px;
-    font-size: 12px;
+    max-width: 600px;
+    width: 90vw;
     margin: 0 auto;
     text-align: center;
 }
 
 #bio {
-    width: 600px;
-    margin: 20px;
-    font-size: 16px;
+    max-width: 600px;
+    width: 90vw;
 }
 
 #epkContact {
@@ -56,48 +56,59 @@
 }
 
 #firstMediaFlex {
-    background-image: url(../images/m4aod-album-art-light.jpg);
+    background-image: url(../images/webps/m4aod-album-art-light.webp);
     background-position: center;
     background-size: cover;
-    border-radius: 150px;
+    border-radius: calc(2vw + (.5 * 1vw));
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 20px 50px;
+    gap: 2vw;
     align-items: center;
-    margin: 20px auto;
-    width: 95%;
+    margin: 2vw auto;
+    width: 95vw;
 }
 
 #fMFYT iframe {
+    width: 90vw;
+    height: calc(90vw * (270/480));
+    max-width: 480px;
+    max-height: 270px;
     display: block;
-    margin: 20px auto;
+    margin: 2vw auto;
 }
 
 #performances {
-    width: 600px;
-    margin: 50px auto;
+    width: 90vw;
+    margin: 5vw auto;
     text-align: center;
 }
 
+#performances iframe {
+    width: 80vw;
+    max-width: 784px;
+    height: calc(80vw * (9/16));
+    max-height: 441px;
+}
+
 #downloadPics {
-    margin: 50px auto;
+    margin: 5vw auto;
     text-align: center;
 }
 
 #pictures {
-    background-image: url(../images/memory-terrain-art.jpg);
+    background-image: url(../images/webps/memory-terrain-art.webp);
     background-position: center;
     background-size: cover;
-    margin: 5%;
-    padding: 10px 0;
+    margin: 0;
+    padding: 3vw;
 }
 
 #photoGrid {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 5%;
-    margin: 20px 5%;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+    margin: 0;
 }
 
 .oneColumn img {

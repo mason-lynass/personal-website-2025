@@ -1,13 +1,9 @@
-h1 {
-    font-size: 36px;
-}
-
 h1, h2, a {
     text-align: center;
 }
 
-p {
-    font-size: 16px;
+main {
+    margin: 0 4vw;
 }
 
 iframe {
@@ -45,7 +41,7 @@ iframe {
     max-height: 700px;
     min-height: 0;
     margin: 40px auto;
-    background-image: url(../images/m4aod-album-art-dark.png);
+    background-image: url(../images/webps/m4aod-album-art-dark.webp);
 }
 
 .m4aodText {
@@ -64,16 +60,16 @@ iframe {
 }
 
 #m4aodtextNew {
-    width: 840px;
-    padding: 20px;
+    width: 70vw;
     text-align: left;
     margin: 0 auto 40px auto;
 }
 
-#m4aodBCNew {
+#newm4flexNew #m4aodBCNew {
     display: block;
     width: 350px;
     height: 470px;
+    max-height: 470px;
     border: 0;
 }
 
@@ -82,7 +78,7 @@ iframe {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 10px;
+    margin: 2vw;
     
 }
 
@@ -91,20 +87,27 @@ iframe {
     flex-flow: row wrap;
 } */
 
-.samplePack{
+.samplePack {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    gap: 2vw;
+    margin: 0;
     /* border: 3px solid black; */
 }
 
 .samplePack img {
     flex: 0 1 auto;
-    max-width: 600px;
+    width: 90vw;
+    max-width: 500px;
     min-width: 0px;
+}
+
+#samplePackCopy {
+    width: 90vw;
+    max-width: 700px;
 }
 
 .border {
@@ -140,17 +143,14 @@ iframe {
     margin: 40px auto;
     /* border: 3px solid rgb(17, 70, 17); */
     border-radius: 50px;
-    background-color: rgb(18, 124, 86);
+    background-color: rgb(17, 114, 78);
+    color: white;
 }
 
 .samplesLink a {
     font-family: 'Montserrat';
     text-decoration: none;
     color: antiquewhite;
-}
-
-.SP {
-    padding: 20px 0;
 }
 
 .soundDesign {
@@ -171,8 +171,8 @@ iframe {
 }
 
 .llTitle p {
-    width: 800px;
-    margin: 40px 20px;
+    width: 80vw;
+    margin: 40px 2vw;
     padding: 10px 20px;
     text-align: center;
 }
@@ -194,6 +194,13 @@ iframe {
     margin: 20px 0;
 }
 
+.recital iframe, #newm4flexNew iframe {
+    width: 90vw;
+    height: calc(90vw * (441/784));
+    max-width: 784px;
+    max-height: 441px;
+}
+
 .recital p {
     font-size: 16px;
     max-width: 784px;
@@ -206,7 +213,7 @@ iframe {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 0 0 50px 0;
+    padding: 0 0 1vw 0;
 }
 
 .recitalExcerpts p {
@@ -229,23 +236,24 @@ iframe {
     align-items: center;
     flex-wrap: wrap;
     align-items: top;
-    margin: 40px auto 70px auto;
+    margin: auto;
 }
 
-.tesserae p, .tesserae a {
-    width: 630px;
-    padding: 5px;
+.tesserae p, #tesseraeLink {
+    display: block;
+    width: 90vw;
+    max-width: 800px;
     text-align: center;
 }
 
 .recList {
-    margin: 40px 40px;
+    margin: 3vw;
     text-align: center;
 }
 
 @media screen and (max-width: 600px) {
 
-    p {
+    p, #tesseraeLink {
         font-size: 12px;
     }
 
@@ -254,7 +262,7 @@ iframe {
     }
 
     hr {
-        margin: 20px;
+        margin: 4vw 0;
     }
 
     #pageLinks {
@@ -293,7 +301,7 @@ iframe {
     }
 
     #newm4flexNew div iframe {
-        width: 100%;
+        width: 90vw;
         height: calc(90vw / (16/9));
         margin: auto;
     }
@@ -304,10 +312,6 @@ iframe {
 
     #samplesLink {
         margin: 10px auto;
-    }
-
-    .yellow {
-        padding: 2vw;
     }
 
     .llTitle p {
@@ -322,14 +326,9 @@ iframe {
     }
 
     .loopingMain iframe, #recital iframe, #recitalExcerpts iframe, #tesserae iframe {
-        width: 100%;
-        height: calc(96vw / (16/9));
+        width: 92%;
+        height: calc(92vw / (16/9));
         margin: 10px 0;
-    }
-
-    .recital {
-        padding: 2%;
-        margin: 0;
     }
 
     .recital p, .recitalExcerpts p {
@@ -338,14 +337,13 @@ iframe {
     }
 
     .recitalExcerpts {
-        padding: 2vw;
         margin: 0 auto;
-        width: 96vw;
+        width: 92vw;
     }
 
     #tesserae {
-        margin: 10px 2vw;
-        width: 96vw;
+        margin: 0;
+        width: 92vw;
     }
 
     .tesseraeText {

@@ -1,11 +1,13 @@
 * {
     /* font-family: 'EB Garamond', sans-serif; */
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', sans-serif;
+    font-display: swap;
 }
 
 .sectionTitle, #MLHeader, #pageLinks a, .nav a {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    font-display: swap;
 }
 
 html {
@@ -26,7 +28,7 @@ p, a {
 }
 
 hr {
-    margin: 40px 20px;
+    margin: 2vw;
     border: 1px solid rgb(17, 70, 17);
 }
 
@@ -66,13 +68,9 @@ hr {
     text-align: center;
     /* background-color:rgb(18, 124, 86); */
     color: rgb(3, 74, 135);
-    padding: 25px;
+    padding: 2vw;
     margin: 0;
-    font-size: 60px;
-}
-
-#pageLinks {
-    margin-bottom: 30px;
+    font-size: calc((2.5 - 1) * 1.2vw + 2rem);
 }
 
 header {
@@ -80,15 +78,15 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     margin: 0px;
-    padding: 20px;
+    padding: 20px 2vw;
     background-color: rgb(36, 58, 49);
 }
 
 #MLHeader {
     display: block;
     text-align: center;
-    font-size: 32px;
-    margin: 10px;
+    font-size: calc((2 - 1) * 1.2vw + 1rem);
+    margin: 0 1vw;
     text-decoration: none;
     color: antiquewhite;
 }
@@ -96,13 +94,13 @@ header {
 .nav a {
     display: block;
     text-align: center;
-    padding: 15px 25px;
-    margin: 10px 10px;
+    padding: 1vw;
+    margin: 0 .5vw;
     text-transform: uppercase;
-    font-weight: bolder;
     color: antiquewhite;
     text-decoration: none; 
     border-radius: 30px;
+    font-size: calc((1.5 - 1) * 1.2vw + .3rem);
     /* border: 3px solid black; */
 }
 
@@ -110,24 +108,33 @@ header {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    font-size: 12px;
 }
+
+h1 {
+    font-size: calc((2 - 1) * 1.2vw + 1rem);
+  }
+  
+  h2 {
+    font-size: calc((2 - 1) * 1.2vw + .85rem);
+  }
+  
+  h3 {
+    font-size: calc((2 - 1) * 1.2vw + .65rem);
+  }
+  
+  h4 {
+    font-size: calc((2 - 1) * 1.2vw + .5rem);
+  }
+  
+  p {
+    font-size: calc((1.5 - 1) * 1.2vw + .5rem);
+  }
 
 @media screen and (min-width: 751px) and (max-width: 1216px) {
 
-    .nav {
-        justify-content: center;
-        margin: 0px auto;
-        /* border: 3px solid black; */
-        /* background-image: url(../images/m4aod-album-art-light.png); */
-    }
-
-    #MLHeader {
-        margin: 10px auto;
-    }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
     .nav {
         flex-flow: column nowrap;
@@ -166,7 +173,7 @@ header {
 
 
 .nav .activePage {
-    color: rgb(18, 124, 86);
+    color: rgb(17, 70, 17);
     background-color: antiquewhite;
 }
 

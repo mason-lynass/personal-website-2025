@@ -2,42 +2,22 @@ h2 {
     font-size: 30px;
 }
 
-h1, h2, a {
+h1,
+h2,
+a {
     text-align: center;
-}
-
-iframe {
-    margin: 0 10px;
 }
 
 .sdMain {
     display: flex;
     flex-direction: row;
-    flex: 1 1 auto;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding: 100px 10px;
-    background-image: url(../images/m4aod-album-art-light.png)
+    padding: 5vw 2vw;
+    gap: 1vw;
+    background-image: url(../images/webps/m4aod-album-art-light.webp)
 }
-
-.norm {
-    margin: 20px 0;
-    padding: 20px 40px;
-    width: 770px;
-    background-color: antiquewhite;
-    border-radius: 200px;
-}
-
-.norm p {
-    font-size: 20px;
-    text-align: center;
-}
-
-.sdReel {
-    min-width: 784px;
-}
-
 
 .sdMain p {
     max-width: 850px;
@@ -45,13 +25,39 @@ iframe {
     margin: 20px;
 }
 
+.norm {
+    margin: 2vw 0;
+    padding: 0 2vw;
+    width: 770px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+}
+
+.norm p {
+    font-size: calc((1.7 - 1) * 1.2vw + .6rem);
+    text-align: center;
+    margin: 2vw 1vw;
+}
+
+.sdReel {
+    width: 80vw;
+    height: calc(80vw * (441/784));
+    max-width: 672px;
+    max-height: 378px;
+}
+
+
+
+
 .sdFreelance {
     text-align: center;
     margin: 20px;
 }
 
-.sdFreelance p, a {
+.sdFreelance p,
+a {
     display: inline;
+    font-size: calc((1.8 - 1) * 1.2vw + .5rem);
 }
 
 .sdVidFlex {
@@ -74,33 +80,37 @@ iframe {
     margin: 10px auto;
     text-align: center;
     max-width: 540px;
-    font-size: 12px;
+    /* font-size: 12px; */
 }
 
 #samplePacks {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     align-items: center;
-    margin: 80px 20px 80px 20px;
+    margin: 2vw;
+    gap: 2vw;
 }
 
 #samplePacks p {
-    margin: 50px 0;
-    font-size: 22px;
+    margin: 2vw 0;
+}
+
+#spText p a {
+    font-size: calc((1.5 - 1) * 1.2vw + .5rem);
+    ;
 }
 
 #percImg {
+    width: 35vw;
     max-width: 600px;
     min-width: 0;
 }
 
 #spText {
-    margin: 20px;
+    width: 55vw;
     max-width: 810px;
     text-align: center;
-    padding: 10px 20px;
 }
 
 .trifilm {
@@ -109,50 +119,92 @@ iframe {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
-    margin: 40px 0 80px 0;
+    gap: 2vw;
+    margin: 2vw;
 }
 
 #trifilmText {
+    width: 55vw;
     max-width: 800px;
-    margin: 0 10px;
     text-align: center;
-    padding: 10px 20px;
-    font-size: 22px;
+
 }
 
-#trifilmText h2 {
-    margin: 20px 0;
+#trifilmText p,
+#trifilmText a,
+#spText p,
+#spText p a {
+    font-size: calc((1.7 - 1) * 1.2vw + .6rem);
+    margin: 2vw 0;
 }
 
-.instagram-media {
+#instagram-embed-0 {
+    width: 35vw !important;
+    height: calc(35vw * (725 / 540));
     max-height: 725px;
-    margin: 0px 10px;
+    max-width: 540px;
+}
+
+@media screen and (max-width: 950px) {
+    #instagram-embed-0 {
+        width: 540px !important;
+        height: 725px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #instagram-embed-0 {
+        width: 90vw !important;
+        height: calc(90vw * (720/540));
+    }
+
+    #trifilmText {
+        width: 90vw;
+    }
 }
 
 .myMusic {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 2vw;
     padding-top: 0px;
-    padding-bottom: 50px;
-    margin: 40px;
+    padding-bottom: 20px;
+    margin: 0 2vw;
 }
 
 .myMusicText {
+    width: 58vw;
     max-width: 800px;
     min-width: 500px;
-    font-size: 16px;
     text-align: left;
-    padding: 10px 20px;
+}
+
+.myMusicText p a {
+    font-size: calc((1.5 - 1) * 1.2vw + .5rem);
 }
 
 #m4aodArt {
+    width: 35vw;
     max-width: 600px;
     max-height: 600px;
+}
+
+@media screen and (max-width: 1000px) {
+    .myMusicText {
+        width: 90vw;
+        max-width: 900px;
+        min-width: 0px;
+        text-align: left;
+    }
+
+    #m4aodArt {
+        width: 80vw;
+        max-width: 800px;
+        max-height: 800px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -230,7 +282,12 @@ iframe {
         margin: 10px 0px;
     }
 
+    #percImg {
+        width: 70vw;
+    }
+
     #spText {
+        width: 90vw;
         padding: 0;
     }
 
@@ -240,7 +297,12 @@ iframe {
         padding: 0;
     }
 
-    #trifilm, #myMusic {
+    #spText p a {
+        font-size: 14px;
+    }
+
+    #trifilm,
+    #myMusic {
         margin: 0;
         padding-bottom: 0;
     }
@@ -255,7 +317,4 @@ iframe {
         font-size: 12px;
     }
 
-    #m4aodArt {
-        width: 100%;
-    }
 }

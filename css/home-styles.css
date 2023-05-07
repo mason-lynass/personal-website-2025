@@ -35,7 +35,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url(../images/washiGreen.bmp);
+    background-image: url(../new-images/washiGreen.bmp);
     z-index: -1;
     opacity: .8;
 }

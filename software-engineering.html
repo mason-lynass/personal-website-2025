@@ -3,18 +3,22 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="This website contains information about Mason Lynass, a software engineer, music creator, and A/V producer living in Seattle, Washington.">
   <title>Mason Lynass - Software Engineering</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather" />
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
   <link rel="stylesheet" href="./css/page-top-styles.css" />
   <link rel="stylesheet" href="./css/se-styles.css" />
 </head>
-<script defer src="script.js"></script>
+<!-- <script defer src="script.js"></script> -->
 
 <body>
   <header>
-    <a class="otherPage" id="MLHeader">Mason Lynass</a>
+    <a class="otherPage" id="MLHeader" href="./index.html">Mason Lynass</a>
     <div class="nav">
       <a class="activePage dd" href="./software-engineering.html">Software Engineering</a>
       <a class="otherPage dd" href="./audio-engineering.html">Audio Engineering</a>
@@ -67,7 +71,8 @@
             developers, and to share what I've learned to help others.
           </p>
           <h3><a href="https://www.github.com/mason-lynass" target="_blank" rel='noopener noreferrer'>my GitHub</a> | <a
-              href="https://www.linkedin.com/in/mason-lynass" target="_blank" rel='noopener noreferrer'>LinkedIn</a></h3>
+              href="https://www.linkedin.com/in/mason-lynass" target="_blank" rel='noopener noreferrer'>LinkedIn</a>
+          </h3>
         </div>
       </div>
     </div>
@@ -79,18 +84,17 @@
     <a href="#music" id="red">Musical programming</a>
     <a href="#other" id="pink">Other projects</a>
   </div>
-
-  <div id="fantasySumo" class="fantasySumo">
-    <h1 class="sectionTitle">Fantasy Sumo</h1>
-    <h3 id="sumoIntro">
-      For my final project of my Flatiron SE course, I built a Fantasy Sumo
-      website!
-    </h3>
-    <p id="private">I've been dealing with a troll on this website, and I'm pretty sure they found my public repo, so I
-      had to make my repo private. If you're interested in checking out my code, send me an email
-      (masonlynass@gmail.com) and I can send you a directory!</p>
-    <div id="fsBodyFlex">
-      <img id="sumoHome" class="border" src="images/fs-home.jpg" />
+  <main>
+    <div id="fantasySumo" class="fantasySumo">
+      <h1 class="sectionTitle">Fantasy Sumo</h1>
+      <h3 id="sumoIntro">
+        For my final project of my Flatiron SE course, I built a Fantasy Sumo
+        website!
+      </h3>
+      <p id="private">I've been dealing with a troll on this website, and I'm pretty sure they found my public repo, so
+        I
+        had to make my repo private. If you're interested in checking out my code, send me an email
+        (masonlynass@gmail.com) and I can send you a directory!</p>
       <div class="fsText fbox">
         <p>
           I've been meticulously compiling and arranging data about ozumo,
@@ -125,13 +129,15 @@
         </p>
         <p>
           In the near future, I'll switch to using an API my friend
-          <a rel='noopener noreferrer' target="_blank" href="https://www.linkedin.com/in/john-r-54a012184/">John</a> has
+          <a rel='noopener noreferrer' target="_blank" href="https://www.linkedin.com/in/john-r-54a012184/">John</a>
+          has
           helped me build, so that I can retrieve wrestler and match information
           which automatically updates instead of updating scores and information
           manually.
         </p>
         <p>
-          Feel free to check out the <a rel='noopener noreferrer' target="_blank" href="https://fantasysumo.net/">Fantasy Sumo
+          Feel free to check out the <a rel='noopener noreferrer' target="_blank"
+            href="https://fantasysumo.net/">Fantasy Sumo
             website</a> - I
           hope you'll draft a team and follow the action!
         </p>
@@ -139,318 +145,340 @@
                 <p>I also track win/loss records, extra honors, salaries, wrestler information, and more on an info sheet.</p>
                 <p>Click <a href="https://docs.google.com/spreadsheets/d/1st17fp_hqAeO4KYyuinbZ23GKFU0kB4eBsdrMSJ7ngE/edit?usp=sharing" rel="noreferrer noopener" target="_blank">this link to my spreadsheet</a> to dig through my sumo records!</p> -->
       </div>
-    </div>
-    <div id="sumoImageFlex">
-      <img class="border" src="images/fs-scores.jpg" />
-      <img class="border" src="images/fs-db.jpg" />
-      <img class="border" src="images/fs-rules.jpg" />
-    </div>
-  </div>
-  <hr />
-  <div id="iceHonky">
-    <h1 class="sectionTitle">Ice Honky</h1>
-    <div id="iceHonkyIntro">
-      <h3><a rel='noopener noreferrer' target="_blank" href="https://icehonky.net">Ice Honky</a> is an NHL Scoreboard website for goal horn lovers.</h3>
-      <h3>Whenever a team scores in real time, their goal horn sounds!</h3>
-    </div>
-    <div id="iHTopFlex">
-      <img class="border" id="iceHonkyAbout" src="images/ice-honky-about.png" />
-      <div id="iceHonkyText">
-        <p>Ice Honky was developed with React.js, which easily handles constantly changing game data. The site requests
-          data from an external NHL Scores API at a set interval whenever games are happening - we haven't found an API
-          that allows WebSocket connections yet. Then we use the consistently refreshing data to display scores and game
-          information.</p>
-        <p>If a team has scored since our last refresh, the site will display a modal that shows the most recent goal
-          scored, and sound that team's goal horn. I like to use the site to keep track of game scores while working on
-          other projects - I can just listen for a goal horn to know when my team has scored!</p>
-        <p>We've also set up a page with all of the goal horns, so users can hear any horn whenever they want, and try
-          to
-          find harmonious (or extremely dissonant) combinations of horns. We're using useSound, a custom React hook, to
-          trigger audio events, whether they come from user input or a change in the data we receive from the API.</p>
-        <p>Ice Honky is a collaboration between myself and <a rel='noopener noreferrer' target="_blank" href="https://lexdotcom.com/">Alex Naughton</a>, an
-          excellent collaborator, full of fun ideas and ingenious solutions.</p>
+      <div id="sumoImageFlex">
+        <img class="border" src="images/webps/fs-home.webp" alt="homepage of FantasySumo.net" />
+        <img class="border" src="images/webps/fs-scores.webp" alt="results page of Fantasy Sumo site" />
+        <img class="border" src="images/webps/fs-db.webp" alt="database page of Fantasy Sumo site" />
+        <img class="border" src="images/webps/fs-rules.webp" alt="rules page of Fantasy Sumo site" />
       </div>
     </div>
-    <div id="ihiFlex">
-      <img class="border ihi" id="iceHonkyHome" src="images/ice-honky-main.png" />
-      <img class="border ihi" id="iceHonkyHorns" src="images/ice-honky-horns.png" />
-    </div>
-  </div>
-  <hr />
-  <div id="bbathroomb">
-    <h1 class="sectionTitle">Better Bathroom Bureau</h1>
-    <div class="bbb" id="bbb">
-      <img class="border" id="bbbHome" src="images/bbb-mirror.png" />
-      <div class="bbbtext fBox" id="bbbtext">
-        <p>
-          My buddy <a target="_blank" rel='noopener noreferrer' href="https://lexdotcom.com/">Alex</a> and I worked
-          together to build Better Bathroom Bureau - a website dedicated to
-          helping people in Seattle access bathroom facilities around the city.
-          We used React.js with some custom CSS to give it a "Craigslist-y"
-          look on the frontend, and Rails to handle the backend and store all of our data.
-        </p>
-        <p>
-          Better Bathroom Bureau began as a Tumblr blog I started right after I
-          moved to Seattle in 2015 - I reviewed bathrooms I visited out of 10,
-          detailing highlights or lowlights in bathroom function, cleanliness,
-          and style.
-        </p>
-        <p>
-          I had a great time working with Alex to create a full-fledged website
-          version of BBB, and I'm excited to open up the bathroom discussion to
-          other contributors and users around Seattle. This is the kind of
-          resource that works best with a lot of user input!
-        </p>
-        <p>
-          Users can view bathrooms stored in the BBB database and leave reviews
-          on bathrooms as a guest. Users can also login / create an account to
-          contribute new bathrooms to the database, leave reviews tied to their
-          account, and save favorite bathrooms for future reference.
-        </p>
-        <p>
-          Each bathroom submitted by users has its own page, with information
-          about its description and accessibility, its location on a Google Map
-          (thanks Google Maps API!), and reviews that site users have left about
-          their experiences.
-        </p>
-
-        <p>
-          In the near future, we'll deploy the site and add a feature that shows
-          "Bathrooms Near Me," cutting out some search time for users in a more
-          urgent need of facilities. We hope that people around Seattle will
-          contribute and the community will benefit from our hard work and
-          creativity!
-        </p>
+    <hr />
+    <div id="iceHonky">
+      <h1 class="sectionTitle">Ice Honky</h1>
+      <div id="iceHonkyIntro">
+        <h3><a rel='noopener noreferrer' target="_blank" href="https://icehonky.net">Ice Honky</a> is an NHL Scoreboard
+          website for goal horn lovers.</h3>
+        <h3>Whenever a team scores in real time, their goal horn sounds!</h3>
       </div>
-    </div>
-    <div id="bbbImages">
-      <img class="border" src="images/bbb-oneb.jpg" />
-      <img class="border" src="images/bbb-home.png" />
-    </div>
-  </div>
-  <hr />
-
-  <div id="music">
-    <h1 class="sectionTitle">Musical Programming</h1>
-    <div id="uS">
-      <h2 class="mTitle">useSound</h2>
-      <div id="useSound">
-        <img src="images/me-at-SeattleJS.jpeg" id="SeattleJS" />
-        <div id="useSoundText">
-          <h2 class="biggerText">In March 2023, I gave a 10-minute talk about my favorite React hook: useSound, a custom
-            hook for sound effects & web audio, developed by <a
-              href="https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/" target="_blank" rel="noopener noreferrer">Josh
-              Comeau</a>.</h2>
-          <p>In my React.js portfolio projects, I prefer to use useSound to play audio because of its simpler syntax and
-            extremely accessible documentation. I like to use the hook to play audio inside event handlers, on form
-            submissions, and wherever I think my site could use a little more character.</p>
-          <p>For this talk at the monthly SeattleJS meetup, I introduced the basic capabilities of useSound, then showed
-            off some fun mini projects I made with it. I built a Random Note Generator to recreate the generative music
-            I make in Ableton Live, as well as a keyboard-accessible drum machine and a very simple audio player.</p>
-          <p>My presentation slides will live on the internet forever <a
-              href="https://mason-lynass.github.io/useSound-demo/" target="_blank" rel="noopener noreferrer">at this link</a>, and you
-            can even download the directory to tinker with the drum machine & random note generator code at <a
-              href="https://github.com/mason-lynass/useSound-demo" target="_blank" rel="noopener noreferrer">my public repo</a>.</p>
+      <div id="iHTopFlex">
+        <img class="border" id="iceHonkyAbout" src="images/webps/ice-honky-about.webp" alt="Ice Honky about page" />
+        <div id="iceHonkyText">
+          <p>Ice Honky was developed with React.js, which easily handles constantly changing game data. The site
+            requests
+            data from an external NHL Scores API at a set interval whenever games are happening - we haven't found an
+            API
+            that allows WebSocket connections yet. Then we use the consistently refreshing data to display scores and
+            game
+            information.</p>
+          <p>If a team has scored since our last refresh, the site will display a modal that shows the most recent goal
+            scored, and sound that team's goal horn. I like to use the site to keep track of game scores while working
+            on
+            other projects - I can just listen for a goal horn to know when my team has scored!</p>
+          <p>We've also set up a page with all of the goal horns, so users can hear any horn whenever they want, and try
+            to
+            find harmonious (or extremely dissonant) combinations of horns. We're using useSound, a custom React hook,
+            to
+            trigger audio events, whether they come from user input or a change in the data we receive from the API.</p>
+          <p>Ice Honky is a collaboration between myself and <a rel='noopener noreferrer' target="_blank"
+              href="https://lexdotcom.com/">Alex Naughton</a>, an
+            excellent collaborator, full of fun ideas and ingenious solutions.</p>
         </div>
       </div>
+      <div id="ihiFlex">
+        <img class="border ihi" id="iceHonkyHome" src="images/webps/ice-honky-main.webp" alt="Ice Honky main page" />
+        <img class="border ihi" id="iceHonkyHorns" src="images/webps/ice-honky-horns.webp" alt="Ice Honky horns page" />
+      </div>
     </div>
-    <hr class="smallLine" />
-    <div id="ll">
-      <h2 class="mTitle">Live Looping</h2>
-      <div class="ll">
-        <div class="liveLooping fBox" id="liveLooping">
-          <h2 class="biggerText">
-            I taught myself to live loop songs and different pieces of music,<br />using
-            BinkBeats'
-            <a href="https://www.binkbeats.com/binklooper" rel="noreferrer noopener" target="_blank">binkLooper</a>
-            in Ableton Live.
-          </h2>
-          <ul>
-            In order to identify, realize, and perform a complete piece of music
-            without any pre-recorded MIDI pitch/rhythm data or pre-recorded
-            audio stems, I developed a multi-step process:
-            <li>
-              I analyze the work to determine if the arrangement of musical
-              phrases and song structure could reasonably be performed through
-              looping. Musical phrases which repeat with some regularity, songs
-              with similar chord structures throughout, and a lack of
-              non-repeating elements occurring simultaneously are all good signs
-              of a song you could loop.
-            </li>
-            <li>
-              Once I think a song could be fit to loop, I'll map out the song
-              structure, orchestration in each section, and specific rhythms and
-              pitches in each musical element. It's just another method of
-              transcription!
-            </li>
-            <li>
-              Some detailed planning is required to turn a transcription into a
-              programmable structure in Ableton Live. I need to decide when (in
-              musical time) I'll record each element, making sure that I stick
-              to my own physical limitations, and make sure to leave space for
-              non-repeating elements or other things I need to perform in
-              real-time.
-            </li>
-            <li>
-              Now that I have my performance structure in mind, I program dummy
-              clips and automation in the binkLooper and other devices in
-              Ableton Live. I can prescribe when instruments are recorded, when
-              they begin looping, when they start and stop again, and how
-              effects process the recorded MIDI data, and assign all of these
-              functions to a specific, predictable timing.
-            </li>
-            <li>
-              With a little troubleshooting and practice, I can perform actions
-              on MIDI devices or with physical instruments, which are recorded
-              and played back in my prescribed framework, in order to perform
-              complex arrangements of many musical elements independently (with
-              help from my computer, of course)!
-            </li>
-          </ul>
+    <hr />
+    <div id="bbathroomb">
+      <h1 class="sectionTitle">Better Bathroom Bureau</h1>
+      <div class="bbb" id="bbb">
+        <img class="border" id="bbbHome" src="images/webps/bbb-mirror.webp" alt="Better Bathroom Bureau account page" />
+        <div class="bbbtext" id="bbbtext">
+          <p>
+            My buddy <a target="_blank" rel='noopener noreferrer' href="https://lexdotcom.com/">Alex</a> and I worked
+            together to build Better Bathroom Bureau - a website dedicated to
+            helping people in Seattle access bathroom facilities around the city.
+            We used React.js with some custom CSS to give it a "Craigslist-y"
+            look on the frontend, and Rails to handle the backend and store all of our data.
+          </p>
+          <p>
+            Better Bathroom Bureau began as a Tumblr blog I started right after I
+            moved to Seattle in 2015 - I reviewed bathrooms I visited out of 10,
+            detailing highlights or lowlights in bathroom function, cleanliness,
+            and style.
+          </p>
+          <p>
+            I had a great time working with Alex to create a full-fledged website
+            version of BBB, and I'm excited to open up the bathroom discussion to
+            other contributors and users around Seattle. This is the kind of
+            resource that works best with a lot of user input!
+          </p>
+          <p>
+            Users can view bathrooms stored in the BBB database and leave reviews
+            on bathrooms as a guest. Users can also login / create an account to
+            contribute new bathrooms to the database, leave reviews tied to their
+            account, and save favorite bathrooms for future reference.
+          </p>
+          <p>
+            Each bathroom submitted by users has its own page, with information
+            about its description and accessibility, its location on a Google Map
+            (thanks Google Maps API!), and reviews that site users have left about
+            their experiences.
+          </p>
+
+          <p>
+            In the near future, we'll deploy the site and add a feature that shows
+            "Bathrooms Near Me," cutting out some search time for users in a more
+            urgent need of facilities. We hope that people around Seattle will
+            contribute and the community will benefit from our hard work and
+            creativity!
+          </p>
         </div>
-        <div class="binkLooper" id="binkLooper">
-          <iframe width="784" height="441" src="https://www.youtube.com/embed/-FqAtXZw2W4" title="YouTube video player"
+      </div>
+      <div id="bbbImages">
+        <img class="border" src="images/webps/bbb-oneb.webp" alt="Better Bathroom Bureau bathroom page" />
+        <img class="border" src="images/webps/bbb-home.webp" alt="Better Bathroom Bureau home page" />
+      </div>
+    </div>
+    <hr />
+
+    <div id="music">
+      <h1 class="sectionTitle">Musical Programming</h1>
+      <div id="uS">
+        <h2 class="mTitle">useSound</h2>
+        <div id="useSound">
+          <img src="images/webps/me-at-SeattleJS.webp" id="SeattleJS" alt="Mason speaking at a Seattle JS meetup" />
+          <div id="useSoundText">
+            <h2 class="biggerText">In March 2023, I gave a 10-minute talk about my favorite React hook: useSound, a
+              custom
+              hook for sound effects & web audio, developed by <a
+                href="https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/" target="_blank"
+                rel="noopener noreferrer">Josh
+                Comeau</a>.</h2>
+            <p>In my React.js portfolio projects, I prefer to use useSound to play audio because of its simpler syntax
+              and
+              extremely accessible documentation. I like to use the hook to play audio inside event handlers, on form
+              submissions, and wherever I think my site could use a little more character.</p>
+            <p>For this talk at the monthly SeattleJS meetup, I introduced the basic capabilities of useSound, then
+              showed
+              off some fun mini projects I made with it. I built a Random Note Generator to recreate the generative
+              music
+              I make in Ableton Live, as well as a keyboard-accessible drum machine and a very simple audio player.</p>
+            <p>My presentation slides will live on the internet forever <a
+                href="https://mason-lynass.github.io/useSound-demo/" target="_blank" rel="noopener noreferrer">at this
+                link</a>, and you
+              can even download the directory to tinker with the drum machine & random note generator code at <a
+                href="https://github.com/mason-lynass/useSound-demo" target="_blank" rel="noopener noreferrer">my public
+                repo</a>.</p>
+          </div>
+        </div>
+      </div>
+      <hr class="smallLine" />
+      <div id="ll">
+        <h2 class="mTitle">Live Looping</h2>
+        <div class="ll">
+          <div class="liveLooping" id="liveLooping">
+            <h2 class="biggerText">
+              I taught myself to live loop songs and different pieces of music,<br />using
+              BinkBeats'
+              <a href="https://www.binkbeats.com/binklooper" rel="noreferrer noopener" target="_blank">binkLooper</a>
+              in Ableton Live.
+            </h2>
+            <ul>
+              In order to identify, realize, and perform a complete piece of music
+              without any pre-recorded MIDI pitch/rhythm data or pre-recorded
+              audio stems, I developed a multi-step process:
+              <li>
+                I analyze the work to determine if the arrangement of musical
+                phrases and song structure could reasonably be performed through
+                looping. Musical phrases which repeat with some regularity, songs
+                with similar chord structures throughout, and a lack of
+                non-repeating elements occurring simultaneously are all good signs
+                of a song you could loop.
+              </li>
+              <li>
+                Once I think a song could be fit to loop, I'll map out the song
+                structure, orchestration in each section, and specific rhythms and
+                pitches in each musical element. It's just another method of
+                transcription!
+              </li>
+              <li>
+                Some detailed planning is required to turn a transcription into a
+                programmable structure in Ableton Live. I need to decide when (in
+                musical time) I'll record each element, making sure that I stick
+                to my own physical limitations, and make sure to leave space for
+                non-repeating elements or other things I need to perform in
+                real-time.
+              </li>
+              <li>
+                Now that I have my performance structure in mind, I program dummy
+                clips and automation in the binkLooper and other devices in
+                Ableton Live. I can prescribe when instruments are recorded, when
+                they begin looping, when they start and stop again, and how
+                effects process the recorded MIDI data, and assign all of these
+                functions to a specific, predictable timing.
+              </li>
+              <li>
+                With a little troubleshooting and practice, I can perform actions
+                on MIDI devices or with physical instruments, which are recorded
+                and played back in my prescribed framework, in order to perform
+                complex arrangements of many musical elements independently (with
+                help from my computer, of course)!
+              </li>
+            </ul>
+          </div>
+          <div class="binkLooper" id="binkLooper">
+            <iframe width="784" height="441" src="https://www.youtube.com/embed/-FqAtXZw2W4"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <p>
+              Check out this tutorial video I made about binkLooper to learn
+              more,<br />or head over to the
+              <a href="audio-engineering.html#loopingMain">Audio Engineering</a>
+              page to watch videos of my live looping performances.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="smallLine" />
+
+      <div class="bigContainer" id="bigContainer">
+
+        <div class="m4aod border" id="m4aod">
+          <h2 class="mTitle">My original music</h2>
+          <div class="m4aodBC" id="m4aodBC">
+            <h2 class="biggerText">
+              Check out my most recent album,<br />Music for an Ordinary Day
+            </h2>
+            <iframe id="m4aodBCReal" title="Music for an Ordinary Day Bandcamp player"
+              src="https://bandcamp.com/EmbeddedPlayer/album=1427149775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+              seamless><a href="https://masonlynass.bandcamp.com/album/music-for-an-ordinary-day">Music for an Ordinary
+                Day by Mason Lynass</a></iframe>
+          </div>
+          <div class="m4aodCopy" id="m4aodCopy">
+
+            <p>
+              This album features 8 compositions I wrote by programming rules for
+              MIDI instruments and devices in Ableton Live. Right now I'm really
+              enjoying creating ambient generative music and I'm releasing new
+              music all the time!
+            </p>
+            <p>
+              More information about my process of music production, programming
+              in my DAW, generative & procedural music, and more on the
+              <a href="sound-design.html#myMusic">sound design page</a>.
+            </p>
+            <p>
+              Check out my latest work on the
+              <a href="music-production.html">music production page</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="unrealEngine border" id="unrealEngine">
+          <h2 class="mTitle">Unreal Engine / Metasounds</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/L9pJQuFwB44" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-          <p>
-            Check out this tutorial video I made about binkLooper to learn
-            more,<br />or head over to the
-            <a href="audio-engineering.html#loopingMain">Audio Engineering</a>
-            page to watch videos of my live looping performances.
-          </p>
+          <div class="uetext" id="uetext">
+            <p>
+              This was one of my first experiments in Unreal Engine's
+              Metasounds;<br />I don't know much about Metasounds yet, but it
+              seems like an exciting and inspiring tool for creative audio
+              projects.
+            </p>
+            <p>
+              I was thinking of Brian Eno's
+              <a href="https://www.youtube.com/watch?v=tLZtnadL1s0" rel="noreferrer noopener" target="_blank">Discreet
+                Music</a>
+              and other slow ambient music, and I made a sort of primitive piece
+              of music in which four wave generators produce random pitches that
+              swell and fade in volume at their own pace.
+            </p>
+            <p>
+              I had already started to make procedural generative music in Ableton
+              Live,and it was a puzzle to switch to a different user interface and
+              reconfigure the rules in a new environment.
+            </p>
+            <p>
+              I would love to work on video games, installations, or any other
+              projects that develop in Unreal Engine!
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
-    <hr class="smallLine" />
+    <hr />
 
-    <div class="bigContainer" id="bigContainer">
+    <div class="otherProjects" id="other">
+      <h1 class="sectionTitle">Other Projects</h1>
+      <div class="othertext fBox" id="othertext">
+        <h2 class="biggerText">Check out some demo videos I've made for other projects I worked on at Flatiron:</h2>
+        <div id="otherVideos">
+          <div class="otherVideo">
+            <div style="padding:75% 0 0 0;position:relative;"><iframe
+                src="https://player.vimeo.com/video/794365440?h=83fe77e3e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RESTly walkthrough"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <p><a rel="noreferrer noopener" target="_blank"
+                href="https://github.com/mason-lynass/RESTly-frontend">RESTly</a> (get it?) -
+              a San Diego-centered app to help users find great food around the city <br><br>
+              Developed
+              with <a rel='noopener noreferrer' target="_blank"
+                href="https://www.linkedin.com/in/armandeepkaur/">Armandeep Kaur</a>
+              using React.js and Ruby.</p>
+          </div>
+          <div class="otherVideo">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                src="https://player.vimeo.com/video/794365969?h=428b709da5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="seattle-HD 720p"></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <p><a rel="noreferrer noopener" target="_blank" href="https://github.com/Jaspreet9795/travel-guide">Seattle
+                Travel Guide</a> -
+              a TripAdvisor-y website for perusing destinations around Seattle. <br><br>
+              Developed with
+              <a rel='noopener noreferrer' target="_blank"
+                href="https://www.linkedin.com/in/jaspreet-kaur-9197b2112/">Jaspreet Kaur</a>
+              using React.js and a
+              local JSON database.
+            </p>
+          </div>
+          <div class="otherVideo">
+            <div style="padding:75% 0 0 0;position:relative;"><iframe
+                src="https://player.vimeo.com/video/794363777?h=801f14fdcd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Grocery List Helper walkthrough"></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <p><a rel="noreferrer noopener" target="_blank"
+                href="https://github.com/mason-lynass/phase1-project-shopping-list-builder">Grocery List Helper</a> -
+              add
+              your personal recipes, then choose meals you'd like to prepare and this webapp
+              will
+              build your shopping list automatically! <br><br> Developed with <a target="_blank"
+                rel='noopener noreferrer' href="https://www.linkedin.com/in/gracedurant/">Grace Durant</a> using vanilla
+              JavaScript
+              and a local JSON database.</p>
+          </div>
 
-      <div class="m4aod border" id="m4aod">
-        <h2 class="mTitle">My original music</h2>
-        <div class="m4aodBC" id="m4aodBC">
-          <h2 class="biggerText">
-            Check out my most recent album,<br />Music for an Ordinary Day
-          </h2>
-          <iframe id="m4aodBCReal"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1427149775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless><a href="https://masonlynass.bandcamp.com/album/music-for-an-ordinary-day">Music for an Ordinary
-              Day by Mason Lynass</a></iframe>
         </div>
-        <div class="m4aodCopy" id="m4aodCopy">
-
-          <p>
-            This album features 8 compositions I wrote by programming rules for
-            MIDI instruments and devices in Ableton Live. Right now I'm really
-            enjoying creating ambient generative music and I'm releasing new
-            music all the time!
-          </p>
-          <p>
-            More information about my process of music production, programming
-            in my DAW, generative & procedural music, and more on the
-            <a href="sound-design.html#myMusic">sound design page</a>.
-          </p>
-          <p>
-            Check out my latest work on the
-            <a href="music-production.html">music production page</a>.
-          </p>
+        <div id="extra">
+          <p>I've also coded some relavitely simple HTML/CSS websites for small projects and portfolios:</p>
+          <a rel='noopener noreferrer' target="_blank" href="https://illustrateddiaries.com/">Illustrated Diaires</a>
+          <p>Jesse Miller's <a rel='noopener noreferrer' target="_blank" href="https://jessemillerworks.com/">personal
+              website</a></p>
+          <p>the website you're on right now!</p>
         </div>
-      </div>
-
-      <div class="unrealEngine border" id="unrealEngine">
-        <h2 class="mTitle">Unreal Engine / Metasounds</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L9pJQuFwB44" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <div class="uetext fBox" id="uetext">
-          <p>
-            This was one of my first experiments in Unreal Engine's
-            Metasounds;<br />I don't know much about Metasounds yet, but it
-            seems like an exciting and inspiring tool for creative audio
-            projects.
-          </p>
-          <p>
-            I was thinking of Brian Eno's
-            <a href="https://www.youtube.com/watch?v=tLZtnadL1s0" rel="noreferrer noopener" target="_blank">Discreet
-              Music</a>
-            and other slow ambient music, and I made a sort of primitive piece
-            of music in which four wave generators produce random pitches that
-            swell and fade in volume at their own pace.
-          </p>
-          <p>
-            I had already started to make procedural generative music in Ableton
-            Live,and it was a puzzle to switch to a different user interface and
-            reconfigure the rules in a new environment.
-          </p>
-          <p>
-            I would love to work on video games, installations, or any other
-            projects that develop in Unreal Engine!
-          </p>
-        </div>
-
       </div>
     </div>
-  </div>
-  <hr />
-
-  <div class="otherProjects" id="other">
-    <h1 class="sectionTitle">Other Projects</h1>
-    <div class="othertext fBox" id="othertext">
-      <h2 class="biggerText">Check out some demo videos I've made for other projects I worked on at Flatiron:</h2>
-      <div id="otherVideos">
-        <div class="otherVideo">
-          <div style="padding:75% 0 0 0;position:relative;"><iframe
-              src="https://player.vimeo.com/video/794365440?h=83fe77e3e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-              style="position:absolute;top:0;left:0;width:100%;height:100%;" title="RESTly walkthrough"></iframe></div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-          <p><a rel="noreferrer noopener" target="_blank" href="https://github.com/mason-lynass/RESTly-frontend">RESTly</a> (get it?) -
-            a San Diego-centered app to help users find great food around the city <br><br>
-            Developed
-            with <a rel='noopener noreferrer' target="_blank" href="https://www.linkedin.com/in/armandeepkaur/">Armandeep Kaur</a>
-            using React.js and Ruby.</p>
-        </div>
-        <div class="otherVideo">
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-              src="https://player.vimeo.com/video/794365969?h=428b709da5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-              style="position:absolute;top:0;left:0;width:100%;height:100%;" title="seattle-HD 720p"></iframe></div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-          <p><a rel="noreferrer noopener" target="_blank" href="https://github.com/Jaspreet9795/travel-guide">Seattle Travel Guide</a> -
-            a TripAdvisor-y website for perusing destinations around Seattle. <br><br>
-            Developed with
-            <a rel='noopener noreferrer' target="_blank" href="https://www.linkedin.com/in/jaspreet-kaur-9197b2112/">Jaspreet Kaur</a>
-            using React.js and a
-            local JSON database.
-          </p>
-        </div>
-        <div class="otherVideo">
-          <div style="padding:75% 0 0 0;position:relative;"><iframe
-              src="https://player.vimeo.com/video/794363777?h=801f14fdcd&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-              style="position:absolute;top:0;left:0;width:100%;height:100%;"
-              title="Grocery List Helper walkthrough"></iframe></div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-          <p><a rel="noreferrer noopener" target="_blank"
-              href="https://github.com/mason-lynass/phase1-project-shopping-list-builder">Grocery List Helper</a> - add
-            your personal recipes, then choose meals you'd like to prepare and this webapp
-            will
-            build your shopping list automatically! <br><br> Developed with <a target="_blank" rel='noopener noreferrer'
-              href="https://www.linkedin.com/in/gracedurant/">Grace Durant</a> using vanilla
-            JavaScript
-            and a local JSON database.</p>
-        </div>
-
-      </div>
-      <div id="extra">
-        <p>I've also coded some relavitely simple HTML/CSS websites for small projects and portfolios:</p>
-        <a rel='noopener noreferrer' target="_blank" href="https://illustrateddiaries.com/">Illustrated Diaires</a>
-        <p>Jesse Miller's <a rel='noopener noreferrer' target="_blank" href="https://jessemillerworks.com/">personal website</a></p>
-        <p>the website you're on right now!</p>
-      </div>
-    </div>
-  </div>
+  </main>
 </body>
 
 </html>
