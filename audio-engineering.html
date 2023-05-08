@@ -14,18 +14,21 @@
     <link rel="stylesheet" href="./css/page-top-styles.css" />
     <link rel="stylesheet" href="./css/ae-styles.css" />
 </head>
-<!-- <script defer src="script.js"></script> -->
+<script defer src="script.js"></script>
 
 <body>
     <header>
         <a class="otherPage" id="MLHeader" href="./index.html">Mason Lynass</a>
-        <div class="nav">
-            <a class="otherPage dd" href="./software-engineering.html">Software Engineering</a>
-            <a class="activePage dd" href="./audio-engineering.html">Audio Engineering</a>
-            <a class="otherPage dd" href="./sound-design.html">Sound Design</a>
-            <a class="otherPage dd" href="./music-production.html">Music Production</a>
-            <a class="otherPage dd" href="./index.html">About</a>
-        </div>
+        <nav role="navigation" class="nav">
+            <button id="menuButton">Menu</button>
+            <ul id="menuUL">
+                <li><a class="otherPage dd" href="./software-engineering.html">Software Engineering</a></li>
+                <li><a class="activePage dd" href="./audio-engineering.html">Audio Engineering</a></li>
+                <li><a class="otherPage dd" href="./sound-design.html">Sound Design</a></li>
+                <li><a class="otherPage dd" href="./music-production.html">Music Production</a></li>
+                <li><a class="otherPage dd" href="./index.html">About</a></li>
+            </ul>
+        </nav>
     </header>
     <!--new album-->
     <div id="pageLinks">
@@ -63,8 +66,9 @@
                 </div>
                 <div id="newm4flexNew">
                     <iframe id="m4aodBCNew"
-                        src="https://bandcamp.com/EmbeddedPlayer/album=1427149775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" title="Music for an Ordinary Day Bandcamp player"
-                        seamless><a href="https://masonlynass.bandcamp.com/album/music-for-an-ordinary-day">Music for an
+                        src="https://bandcamp.com/EmbeddedPlayer/album=1427149775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+                        title="Music for an Ordinary Day Bandcamp player" seamless><a
+                            href="https://masonlynass.bandcamp.com/album/music-for-an-ordinary-day">Music for an
                             Ordinary
                             Day by Mason Lynass</a></iframe>
                     <div>
@@ -89,7 +93,8 @@
         <div id="SP" class="green SP">
             <h2 class="sectionTitle">Sample Pack - Mason's Percussion</h2>
             <div class="samplePack" id="samplePack">
-                <img class="samplePackImage" alt="a pile of percussion instruments on a couch in the studio" src="./images/webps/mason's-percussion.webp"></img>
+                <img class="samplePackImage" alt="a pile of percussion instruments on a couch in the studio"
+                    src="./images/webps/mason's-percussion.webp"></img>
                 <div id="samplePackCopy">
                     <div class="samplePackText" id="samplePackText">
 

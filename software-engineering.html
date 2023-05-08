@@ -14,18 +14,21 @@
   <link rel="stylesheet" href="./css/page-top-styles.css" />
   <link rel="stylesheet" href="./css/se-styles.css" />
 </head>
-<!-- <script defer src="script.js"></script> -->
+<script defer src="script.js"></script>
 
 <body>
   <header>
     <a class="otherPage" id="MLHeader" href="./index.html">Mason Lynass</a>
-    <div class="nav">
-      <a class="activePage dd" href="./software-engineering.html">Software Engineering</a>
-      <a class="otherPage dd" href="./audio-engineering.html">Audio Engineering</a>
-      <a class="otherPage dd" href="./sound-design.html">Sound Design</a>
-      <a class="otherPage dd" href="./music-production.html">Music Production</a>
-      <a class="otherPage dd" href="./index.html">About</a>
-    </div>
+    <nav role="navigation" class="nav">
+      <button id="menuButton">Menu</button>
+      <ul id="menuUL">
+        <li><a class="activePage dd" href="./software-engineering.html">Software Engineering</a></li>
+        <li><a class="otherPage dd" href="./audio-engineering.html">Audio Engineering</a></li>
+        <li><a class="otherPage dd" href="./sound-design.html">Sound Design</a></li>
+        <li><a class="otherPage dd" href="./music-production.html">Music Production</a></li>
+        <li><a class="otherPage dd" href="./index.html">About</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="mainText" id="mainText">
     <div class="TEXT">
@@ -79,8 +82,8 @@
   </div>
   <div id="pageLinks">
     <a href="#fantasySumo" id="blue">Fantasy Sumo</a>
-    <a href="#iceHonky" id="green">Ice Honky</a>
-    <a href="#bbathroomb" id="yellow">Better Bathroom Bureau</a>
+    <a href="#woodland" id="green">Woodland Theater</a>
+    <a href="#iceHonky" id="yellow">Ice Honky</a>
     <a href="#music" id="red">Musical programming</a>
     <a href="#other" id="pink">Other projects</a>
   </div>
@@ -153,6 +156,43 @@
       </div>
     </div>
     <hr />
+    <div id="woodland">
+      <h1 class="sectionTitle">Woodland Theater</h1>
+      <div id="woodlandIntro">
+        <h3>I made a website for the <a rel='noopener noreferrer' target="_blank"
+            href="https://www.woodlandtheater.org">Woodland Theater</a>, a DIY music venue and arts space in Seattle.
+        </h3>
+      </div>
+      <div id="woodlandText">
+        <p>As a member of the space, I have a music practice space above the stage, and I volunteer to help put on shows
+          and maintain our online presence.</p>
+        <p>Woodland Theater has hosted shows & events since 2018, and it has a long history as a space for the arts and
+          creative happenings. I wanted to honor the history of the space by writing about its past on the About page,
+          and archiving the shows catalogued on the previous website.</p>
+        <p>To catalog past & future shows & events, I built a simple API through <a rel='noopener noreferrer'
+            target="_blank" href="https://www.sanity.io/">Sanity Studio</a>. With a little bit of
+          TypeScript and some help from their very useful documentation, I defined two data types (shows and bands)
+          which are accessible at unique endpoints. Only members at Woodland can clone our private API repo, run Sanity
+          Studio locally on their device, and add shows and bands to the dataset. I found Sanity Studio very easy to use
+          and build with, and their simple UI makes it easy for non-coders to contribute.</p>
+        <p>I also used a couple of other APIs from <a rel='noopener noreferrer' target="_blank"
+            href="https://behold.so/">Behold</a> and <a rel='noopener noreferrer' target="_blank"
+            href="https://mailchimp.com/developer/marketing/api//">Mailchimp</a> to add features to the site. With
+          Behold, I can
+          display a gallery of content pulled from the Woodland Instagram page. With the Mailchimp API and a convenient
+          Node package, users can add their email address to our venue mailing list, hosted on Mailchimp.</p>
+        <p>I had a lot of fun putting this site together. I'm excited to see the content change as we add Instagram
+          posts and events to the Sanity API. The venue website had been frozen in time since February 2020 so I am so
+          glad to know that we have something useful and current again!</p>
+      </div>
+      <div id="woodlandImageFlex">
+        <img class="border" src="images/webps/woodland-home.webp" alt="homepage of WoodlandTheater.org" />
+        <img class="border" src="images/webps/woodland-events.webp" alt="events page of Woodland Theater site" />
+        <img class="border" src="images/webps/woodland-music.webp" alt="music page of Woodland Theater site" />
+        <img class="border" src="images/webps/woodland-about.webp" alt="about page of Woodland Theater site" />
+      </div>
+    </div>
+    <hr>
     <div id="iceHonky">
       <h1 class="sectionTitle">Ice Honky</h1>
       <div id="iceHonkyIntro">
@@ -190,59 +230,6 @@
       </div>
     </div>
     <hr />
-    <div id="bbathroomb">
-      <h1 class="sectionTitle">Better Bathroom Bureau</h1>
-      <div class="bbb" id="bbb">
-        <img class="border" id="bbbHome" src="images/webps/bbb-mirror.webp" alt="Better Bathroom Bureau account page" />
-        <div class="bbbtext" id="bbbtext">
-          <p>
-            My buddy <a target="_blank" rel='noopener noreferrer' href="https://lexdotcom.com/">Alex</a> and I worked
-            together to build Better Bathroom Bureau - a website dedicated to
-            helping people in Seattle access bathroom facilities around the city.
-            We used React.js with some custom CSS to give it a "Craigslist-y"
-            look on the frontend, and Rails to handle the backend and store all of our data.
-          </p>
-          <p>
-            Better Bathroom Bureau began as a Tumblr blog I started right after I
-            moved to Seattle in 2015 - I reviewed bathrooms I visited out of 10,
-            detailing highlights or lowlights in bathroom function, cleanliness,
-            and style.
-          </p>
-          <p>
-            I had a great time working with Alex to create a full-fledged website
-            version of BBB, and I'm excited to open up the bathroom discussion to
-            other contributors and users around Seattle. This is the kind of
-            resource that works best with a lot of user input!
-          </p>
-          <p>
-            Users can view bathrooms stored in the BBB database and leave reviews
-            on bathrooms as a guest. Users can also login / create an account to
-            contribute new bathrooms to the database, leave reviews tied to their
-            account, and save favorite bathrooms for future reference.
-          </p>
-          <p>
-            Each bathroom submitted by users has its own page, with information
-            about its description and accessibility, its location on a Google Map
-            (thanks Google Maps API!), and reviews that site users have left about
-            their experiences.
-          </p>
-
-          <p>
-            In the near future, we'll deploy the site and add a feature that shows
-            "Bathrooms Near Me," cutting out some search time for users in a more
-            urgent need of facilities. We hope that people around Seattle will
-            contribute and the community will benefit from our hard work and
-            creativity!
-          </p>
-        </div>
-      </div>
-      <div id="bbbImages">
-        <img class="border" src="images/webps/bbb-oneb.webp" alt="Better Bathroom Bureau bathroom page" />
-        <img class="border" src="images/webps/bbb-home.webp" alt="Better Bathroom Bureau home page" />
-      </div>
-    </div>
-    <hr />
-
     <div id="music">
       <h1 class="sectionTitle">Musical Programming</h1>
       <div id="uS">
@@ -279,12 +266,12 @@
         <h2 class="mTitle">Live Looping</h2>
         <div class="ll">
           <div class="liveLooping" id="liveLooping">
-            <h2 class="biggerText">
-              I taught myself to live loop songs and different pieces of music,<br />using
+            <h4 class="biggerText">
+              I taught myself to live loop songs and different pieces of music, using
               BinkBeats'
               <a href="https://www.binkbeats.com/binklooper" rel="noreferrer noopener" target="_blank">binkLooper</a>
               in Ableton Live.
-            </h2>
+            </h4>
             <ul>
               In order to identify, realize, and perform a complete piece of music
               without any pre-recorded MIDI pitch/rhythm data or pre-recorded
@@ -416,6 +403,59 @@
 
     <div class="otherProjects" id="other">
       <h1 class="sectionTitle">Other Projects</h1>
+      <div id="bbathroomb">
+        <h2 id="bbbTitle">Better Bathroom Bureau</h2>
+        <div class="bbb" id="bbb">
+          <img class="border" id="bbbHome" src="images/webps/bbb-mirror.webp"
+            alt="Better Bathroom Bureau account page" />
+          <div class="bbbtext" id="bbbtext">
+            <p>
+              My buddy <a target="_blank" rel='noopener noreferrer' href="https://lexdotcom.com/">Alex</a> and I worked
+              together to build Better Bathroom Bureau - a website dedicated to
+              helping people in Seattle access bathroom facilities around the city.
+              We used React.js with some custom CSS to give it a "Craigslist-y"
+              look on the frontend, and Rails to handle the backend and store all of our data.
+            </p>
+            <p>
+              Better Bathroom Bureau began as a Tumblr blog I started right after I
+              moved to Seattle in 2015 - I reviewed bathrooms I visited out of 10,
+              detailing highlights or lowlights in bathroom function, cleanliness,
+              and style.
+            </p>
+            <p>
+              I had a great time working with Alex to create a full-fledged website
+              version of BBB, and I'm excited to open up the bathroom discussion to
+              other contributors and users around Seattle. This is the kind of
+              resource that works best with a lot of user input!
+            </p>
+            <p>
+              Users can view bathrooms stored in the BBB database and leave reviews
+              on bathrooms as a guest. Users can also login / create an account to
+              contribute new bathrooms to the database, leave reviews tied to their
+              account, and save favorite bathrooms for future reference.
+            </p>
+            <p>
+              Each bathroom submitted by users has its own page, with information
+              about its description and accessibility, its location on a Google Map
+              (thanks Google Maps API!), and reviews that site users have left about
+              their experiences.
+            </p>
+
+            <p>
+              In the near future, we'll deploy the site and add a feature that shows
+              "Bathrooms Near Me," cutting out some search time for users in a more
+              urgent need of facilities. We hope that people around Seattle will
+              contribute and the community will benefit from our hard work and
+              creativity!
+            </p>
+          </div>
+        </div>
+        <div id="bbbImages">
+          <img class="border" src="images/webps/bbb-oneb.webp" alt="Better Bathroom Bureau bathroom page" />
+          <img class="border" src="images/webps/bbb-home.webp" alt="Better Bathroom Bureau home page" />
+        </div>
+      </div>
+      <hr />
       <div class="othertext fBox" id="othertext">
         <h2 class="biggerText">Check out some demo videos I've made for other projects I worked on at Flatiron:</h2>
         <div id="otherVideos">

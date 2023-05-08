@@ -18,13 +18,16 @@
 <body>
     <header>
         <a class="otherPage" id="MLHeader" href="./index.html">Mason Lynass</a>
-        <div class="nav">
-            <a class="otherPage dd" href="./software-engineering.html">Software Engineering</a>
-            <a class="otherPage dd" href="./audio-engineering.html">Audio Engineering</a>
-            <a class="activePage dd" href="./sound-design.html">Sound Design</a>
-            <a class="otherPage dd" href="./music-production.html">Music Production</a>
-            <a class="otherPage dd" href="./index.html">About</a>
-        </div>
+        <nav role="navigation" class="nav">
+            <button id="menuButton">Menu</button>
+            <ul id="menuUL">
+                <li><a class="otherPage dd" href="./software-engineering.html">Software Engineering</a></li>
+                <li><a class="otherPage dd" href="./audio-engineering.html">Audio Engineering</a></li>
+                <li><a class="activePage dd" href="./sound-design.html">Sound Design</a></li>
+                <li><a class="otherPage dd" href="./music-production.html">Music Production</a></li>
+                <li><a class="otherPage dd" href="./index.html">About</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="sdMain" id="sdMain">
         <iframe class="sdReel" width="784" height="441" src="https://www.youtube.com/embed/I8NVtO9eX-g"
@@ -350,6 +353,6 @@
     </main>
 
 </body>
-<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
 
 </html>

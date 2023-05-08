@@ -11,7 +11,7 @@ main {
     text-align: center;
     background-position: center;
     background-size: cover;
-    padding: 5vw;
+    padding: 3vw 7vw;
     margin: 0 auto;
     /* border: 3px solid black; */
 }
@@ -24,7 +24,7 @@ main {
 
 .mT{
     margin: auto;
-    padding: 10px 5vw;
+    padding: 10px 3vw;
     width: 80vw;
     border-radius: 10vw;
     background-color: antiquewhite;
@@ -69,7 +69,7 @@ main {
     text-align: center;
 }
 
-#sumoImageFlex {
+#sumoImageFlex, #woodlandImageFlex {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -78,12 +78,12 @@ main {
     margin: 2vw auto;
 }
 
-#sumoImageFlex img {
+#sumoImageFlex img, #woodlandImageFlex img {
     width: calc(43vw);
     height: 100%;
 }
 
-.fsText {
+.fsText, #woodlandText {
     flex: 0 1 auto;
     width: 80vw;
     text-align: left;
@@ -114,7 +114,7 @@ main {
     width: 50vw;
 }
 
-#iceHonkyIntro {
+#iceHonkyIntro, #woodlandIntro {
     text-align: center;
     color:rgb(17, 70, 17);
 }
@@ -144,6 +144,11 @@ main {
     gap: 2vw;
     align-items: center;
     margin: 2vw auto;
+}
+
+#bbbTitle {
+    color: rgb(17, 70, 17);
+    text-align: center;
 }
 
 #bbbHome {
@@ -215,7 +220,7 @@ main {
     max-width: 800px;
 }
 
-.liveLooping p, ul, li {
+.liveLooping p, .liveLooping ul, .liveLooping li  {
     padding: 30px 0 0 0;
     text-align: left;
     margin: 0 10px;
@@ -232,7 +237,6 @@ main {
 }
 
 .biggerText {
-    font-size: 20px;
     text-align: center;
     color: rgb(17, 70, 17);
 }
@@ -336,6 +340,7 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     gap: 20px;
+    margin: 4vw auto;
     align-items: center;
 }
 
