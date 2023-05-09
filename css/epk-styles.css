@@ -1,3 +1,22 @@
+.navi .otherPage {
+    display: block;
+    text-align: center;
+    padding: 1vw;
+    margin: 0 .5vw;
+    text-transform: uppercase;
+    color: antiquewhite;
+    text-decoration: none; 
+    border-radius: 30px;
+    font-size: calc((1.5 - 1) * 1.2vw + .5rem);
+    font-family: 'Montserrat', sans-serif;
+    font-display: swap;
+}
+
+.navi .otherPage:hover {
+    color: antiquewhite;
+    background-color: rgb(18, 124, 86);
+}
+
 #epkFirst {
     display: flex;
     flex-flow: row wrap;
@@ -6,10 +25,6 @@
     align-items: center;
     width: 95%;
     margin: 2vw auto;
-}
-
-#epkTop {
-    margin: 0 auto;
 }
 
 #epkTopPic {
@@ -36,7 +51,7 @@
 }
 
 #bio {
-    max-width: 600px;
+    max-width: 1000px;
     width: 90vw;
 }
 
@@ -48,6 +63,20 @@
     text-align: center;
     margin: 20px auto 0 auto;
     padding: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+    #meOnStage, #reviews, #bio {
+        width: 42vw;
+    }
+
+    #meOnStage, #reviews {
+        max-width: 620px;
+    }
+
+    #bio {
+        max-width: 1200px;
+    }
 }
 
 #m4aod {
@@ -91,6 +120,10 @@
     max-height: 441px;
 }
 
+#performances div h3 {
+    color: rgb(17, 70, 17)
+}
+
 #downloadPics {
     margin: 5vw auto;
     text-align: center;
@@ -113,4 +146,11 @@
 
 .oneColumn img {
     width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        display: flex;
+        padding: 20px 2vw;
+    }
 }
