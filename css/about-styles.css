@@ -199,6 +199,12 @@ p {
 
 @media screen and (max-width: 600px) {
 
+    #mainHeadshot {
+        min-width: 0;
+        width: 70vw;
+        border-radius: 20px;
+    }
+
     #aboutCopy {
         width: 90vw;
     }
@@ -207,9 +213,14 @@ p {
         margin: 2vw auto;
     }
 
+    .slWrapper {
+        margin: 2vw;
+    }
+
     .slContainer {
         width: 90%;
         height: 100%;
+        margin-top: 1vw;
     }
     
     .slide img {

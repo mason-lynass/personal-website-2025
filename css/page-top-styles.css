@@ -154,7 +154,7 @@ h1 {
     header {
         display: block;
         margin: 0 auto;
-        padding: 5vw;
+        padding: 3vw 5vw;
     }
 
     #MLHeader {
@@ -180,7 +180,7 @@ h1 {
 
     nav ul.is-active {
         display: block;
-        padding-top: 5vw;
+        padding-top: 2vw;
       }
 
     .nav li a {
@@ -194,8 +194,8 @@ h1 {
     #menuButton {
         display: block;
         position: absolute;
-        right: 5vw;
-        top: 5vw;
+        right: 3vw;
+        top: 3vw;
         height: calc(29px + 1vw);
         color: rgb(17, 70, 17);
         background-color: antiquewhite;
@@ -215,7 +215,11 @@ h1 {
     }
 }
 
-
+@media screen and (max-width: 600px) {
+    #pageLinks a {
+        padding: 4vw;
+    }
+}
 
 .nav .activePage {
     color: rgb(17, 70, 17);
