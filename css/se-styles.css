@@ -6,12 +6,45 @@ main {
     margin: 0 4vw;
 }
 
+.overlay {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(18, 124, 86);
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.overlay p {
+    color: antiquewhite;
+    max-width: 1000px;
+    margin: 10px auto;
+    font-size: calc((1.5 - 1) * 1.2vw + .8rem);
+    text-align: center;
+}
+
 .mainText {
     background-image: url(../images/webps/m4aod-album-art-light.webp);
     text-align: center;
     background-position: center;
     background-size: cover;
-    padding: 3vw 7vw;
+    padding: 3vw 10vw;
     margin: 0 auto;
     /* border: 3px solid black; */
 }
@@ -25,16 +58,22 @@ main {
 .mT{
     margin: auto;
     padding: 10px 3vw;
-    width: 80vw;
-    border-radius: 10vw;
+    width: fit-content;
+    max-width: 1200px;
+    border-radius: 2vw;
     background-color: antiquewhite;
     
     /* border: 5px solid black; */
 }
 
+.TEXT hr {
+    width: 20vw;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
 .mT h2 {
-    padding: 0 5vw;
-    font-family: 'Montserrat';
+    padding: 0 7vw;
     /* font-size: 32px; */
 }
 
@@ -47,13 +86,41 @@ main {
     margin: 0 40%;
 }
 
-.p2 :not(h3) {
-    text-align: left;
-    padding: 0 30px;
+.p2 {
+    width: fit-content;
+    margin: 0 auto;
 }
 
-.fantasySumo {
-    gap: 20px;
+.p2 :not(h3) {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: calc((1.7 - 1) * 1.2vw + .7rem);
+}
+
+.p3 {
+    margin: 20px auto;
+}
+
+.p3 a {
+    font-size: calc((1.7 - 1) * 1.2vw + .7rem);;
+    padding: 10px;
+    margin: 10px;
+}
+
+.p3 a:hover {
+    background-color: rgb(18, 124, 86);
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+.p2 div {
+    padding: 0 20px;
+    margin: 20px auto;
 }
 
 #private {
@@ -64,77 +131,52 @@ main {
     padding: 10px 20px;
 }
 
-#sumoIntro {
-    color:rgb(17, 70, 17);
-    text-align: center;
-}
-
-#sumoImageFlex, #woodlandImageFlex {
+.sectionFlex {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
-    margin: 2vw auto;
+    gap: 2vw;
 }
 
-#sumoImageFlex img, #woodlandImageFlex img {
-    width: calc(43vw);
-    height: 100%;
-}
-
-.fsText, #woodlandText {
-    flex: 0 1 auto;
-    width: 80vw;
-    text-align: left;
-    margin: 2vw auto;
-    /* border: 3px solid rgb(12,45,12); */
-}
-
-.fBox {
-    padding: 10px 20px;
-    text-align: center;
-    /* border: 3px solid rgb(12,45,12); */
-    /* max-width: 680px; */
-}
-
-#iHTopFlex {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#iceHonkyAbout {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: 20px auto;
-    min-width: 550px;
-    width: 50vw;
-}
-
-#iceHonkyIntro, #woodlandIntro {
-    text-align: center;
-    color:rgb(17, 70, 17);
-}
-
-.ihi {
+.sectionText {
     width: 40vw;
-    height: 100%;
-    margin: 20px 0;
+    max-width: 700px;
 }
 
-#ihiFlex {
+.sectionText p {
+    font-size: calc((1.5 - 1) * 1.2vw + .6rem);
+}
+
+.techList {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
 }
 
-#iceHonkyText {
-    width: 80vw;
-    margin: 2vw auto;
+.techList li {
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+    color: antiquewhite;
+    background-color: rgb(17, 70, 17);
+}
+
+.container {
+    width: 50vw;
+    max-width: 800px;
+}
+
+.containerImage {
+    display: block;
+    width: 50vw;
+    max-width: 800px;
+    margin: auto;
 }
 
 #bbb {
@@ -351,12 +393,23 @@ main {
     padding: 10px;
 }
 
+#extra {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 #extra p, #extra a {
     font-size: calc((1.5 - 1) * 1.2vw + .5rem);
 }
 
 
 @media screen and (max-width: 910px){
+
+    .p2 p {
+        font-size: 14px;
+    }
     
     .mainText {
         text-align: center;
@@ -369,7 +422,20 @@ main {
         width: 90%;
     }
 
-    #sumoHome, #iceHonkyAbout, #bbbHome, #bbbImages img, #ihiFlex img {
+    .sectionFlex {
+        flex-flow: column nowrap;
+    }
+
+    .sectionText {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        align-items: center;
+        width: 90vw;
+        max-width: none;
+    }
+
+    .containerImage, .container, #iceHonkyAbout, #bbbHome, #bbbImages img, #ihiFlex img {
         width: 90vw;
         min-width: 0;
     }
@@ -391,6 +457,7 @@ main {
 
     .mainText {
         margin: 0;
+        padding: 2vw;
     }
 
     .p1 hr {
@@ -406,9 +473,9 @@ main {
         padding: 0;
     }
 
-    .mT p, .p2 {
-        padding: 5px;
-        margin: 0;
+    .p3 a {
+        font-size: 14px;
+        padding: 0;
     }
 
     #pageLinks {
@@ -419,17 +486,12 @@ main {
         padding: 4vw;
     }
 
-    .fantasySumo {
-        margin: 0 auto;
+    .sectionText {
+        display: block;
     }
 
-    #fsBodyFlex {
-        margin: 0;
-    }
-
-    .fBox {
-        padding: 10px;
-        margin: 0 auto;
+    .techList li {
+        font-size: 10px;
     }
 
     #fsBodyFlex p, #iHTopFlex p {

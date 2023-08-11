@@ -4,8 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="This website contains information about Mason Lynass, a software engineer, music creator, and A/V producer living in Seattle, Washington.">
+    <meta property="og:title" content="Mason Lynass">
+    <meta property="og:locale" content="en_US">
+    <meta name="og:description"
+        content="This website contains information about Mason Lynass, a software engineer, music creator, and A/V producer living in Seattle, Washington.">
+    <link rel="canonical" href="https://www.masonlynass.com">
+    <meta property="og:url" content="https://www.masonlynass.com">
+    <meta property="og:site_name" content="Mason Lynass">
+    <meta property="og:type" content="website">
+    <meta name="description"
+        content="This website contains information about Mason Lynass, a software engineer, music creator, and A/V producer living in Seattle, Washington.">
     <title>Mason Lynass - About</title>
+    <link rel="icon" type="image/x-icon" href="/images/apple.ico">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
@@ -13,6 +23,7 @@
     <link rel="stylesheet" href="./css/page-top-styles.css" />
     <link rel="stylesheet" href="./css/about-styles.css" />
 </head>
+
 <body>
     <header>
         <a class="otherPage" id="MLHeader" href="./index.html">Mason Lynass</a>
@@ -28,16 +39,25 @@
         </nav>
     </header>
     <!--put this in a box-->
+    <div id="headers">
+        <h2 id="ACTitle">Hi there, I'm Mason!</h2>
+        <h3 id="ACTitle"> I'm a software engineer, music creator, and A/V producer, currently based
+            in Seattle, WA.</h3>
+    </div>
     <div class="mainAbout">
+        <div>
+            <img class="mainHeadshot" id="mainHeadshot" src="./images/webps/PAS_headshot.webp"
+                alt="headshot of Mason Lynass"></img><!--class="mainHeadshot" id="mainHeadshot"-->
+        </div>
         <div class="leftSide" id="leftSide">
             <div class="aboutCopy" id="aboutCopy">
-                <h2 id="ACTitle">Mason Lynass is a software engineer, music creator, and A/V producer, currently based
-                    in Seattle, WA.</h2>
-                <p>Mason is currently working as a freelance software engineer and web developer, building websites for clients and learning new skills & languages by developing personal projects. He completed a 15-week Software Engineering course at the <a
-                    target="_blank" rel="noopener noreferrer" href="https://flatironschool.com/">Flatiron School</a>, developing and deploying Full-Stack web
-                    applications and exploring JavaScript, React.js, Ruby on Rails, SQL & PostgreSQL, Sinatra &
-                    ActiveRecord, HTML, CSS, and Git.</p>
-                    <p>Mason has performed original generative electronic music, given recitals of contemporary percussion repertoire, played drums in various pop & rock bands, and performed at festivals and concert halls across the country. He has worked as a sound designer, engineer, and music producer with film production studios, independent artists, podcast productions, and other freelance clients.</p>
+                <p>I'm currently working as a freelance software engineer and web developer, building websites for
+                    clients and learning new skills & languages by developing personal projects. I like to use
+                    JavaScript & TypeScript, React.js, Node.js, Ruby on Rails, SQL & PostgreSQL, HTML, CSS, and Git.</p>
+                <p>I've performed original generative electronic music, given recitals of contemporary percussion
+                    repertoire, played drums in various pop & rock bands, and performed at festivals and concert halls
+                    across the country. I've worked as a sound designer, engineer, and music producer with film
+                    production studios, independent artists, podcast productions, and other freelance clients.</p>
                 <!-- <p>Mason graduated from the University of Washington with a Master of Music degree in percussion
                     performance. At UW, Mason studied with Dr. Bonnie Whiting, played in the Partch Ensemble and various
                     UW ensembles, and recorded and released a recital of solo percussion repertoire in June of 2020.</p> -->
@@ -47,22 +67,26 @@
                     and toured the west coast with Señor Fin and Baby Jessica, performed at the Percussive Arts Society
                     International Convention with the UNT Percussion Ensemble and the Santa Clara Vanguard, and hung
                     outat SoSI, Chosen Vale, and Inuksuit NYC.</p> -->
-                <p>Mason won the Portland Percussion Group's Call for Scores with his work Tesserae, composed for
-                    percussion trio or quartet. Since the Portland Percussion Group premiered Tesserae in May of 2017, the
+                <p>My composition <i>Tesserae</i>, composed for
+                    percussion trio or quartet, won the Portland Percussion Group's Call for Scores in 2017. Since the
+                    Portland Percussion Group premiered Tesserae in May of 2017, the
                     piece has been published through Tapspace and performed by ensembles around the United States.</p>
-                    <p>
-                        Mason earned a Master of Music degree at the University of Washington and a Bachelor of Music degree at the University of North Texas, studying percussion performance with renowned faculty including Bonnie Whiting, Christopher Deane, Ed Soph, and Paul Rennick.
-                    </p>
+                <p>
+                    I earned a Master of Music degree at the University of Washington and a Bachelor of Music degree at
+                    the University of North Texas, studying percussion performance with renowned faculty including
+                    Bonnie Whiting, Christopher Deane, Ed Soph, and Paul Rennick. I completed a 15-week Full-Stack
+                    Software Engineering bootcamp through the Flatiron School in January 2023.
+                </p>
             </div>
             <div id="bottomButtons">
                 <a class="contact" href="mailto:masonlynass@gmail.com">Contact</a>
-                <a class="contact" href="./Resume-for-Humans-5-23-Mason-Lynass.pdf">Resumé</a>
+                <a class="contact" target="_blank" rel="noopener noreferrer"
+                    href="./Resume-for-Humans-5-23-Mason-Lynass.pdf">Resumé</a>
             </div>
 
             <!--<p>hello what's up</p>-->
         </div>
-        <img class="mainHeadshot" id="mainHeadshot" src="./images/webps/PAS_headshot.webp"
-            alt="headshot of Mason Lynass"></img><!--class="mainHeadshot" id="mainHeadshot"-->
+
     </div>
     <section class="slWrapper" id="galleryOfMe">
         <button class="slArrow" id="slArrowPrev">
@@ -72,14 +96,21 @@
             &#8250;
         </button>
         <ul class="slContainer" id="slContainer">
-            <li class="slide arboretum"><img src="./images/webps/mason-at-arboretum.webp" alt="mason at the arboretum"></li>
-            <li class="slide diamond"><img src="./images/webps/diamond-marimba.webp" alt="mason with a diamond marimba"></li>
-            <li class="slide drumset"><img src="./images/webps/drumset-bw.webp" alt="mason playing the drums in black & white"></li>
-            <li class="slide werewolf"><img src="./images/webps/werewolf-avatar.webp" alt="mason holding a cymbal at werewolf vacation"></li>
-            <li class="slide inuksuit"><img src="./images/webps/inuksuit.webp" alt="mason playing a bunch of cymbals at Inuksuit"></li>
-            <li class="slide kaytra"><img src="./images/webps/kaytranada-rec.webp" alt="mason playing his Kaytranada cover"></li>
+            <li class="slide arboretum"><img src="./images/webps/mason-at-arboretum.webp" alt="mason at the arboretum">
+            </li>
+            <li class="slide diamond"><img src="./images/webps/diamond-marimba.webp" alt="mason with a diamond marimba">
+            </li>
+            <li class="slide drumset"><img src="./images/webps/drumset-bw.webp"
+                    alt="mason playing the drums in black & white"></li>
+            <li class="slide werewolf"><img src="./images/webps/werewolf-avatar.webp"
+                    alt="mason holding a cymbal at werewolf vacation"></li>
+            <li class="slide inuksuit"><img src="./images/webps/inuksuit.webp"
+                    alt="mason playing a bunch of cymbals at Inuksuit"></li>
+            <li class="slide kaytra"><img src="./images/webps/kaytranada-rec.webp"
+                    alt="mason playing his Kaytranada cover"></li>
             <li class="slide apple"><img src="./images/webps/mason-apple.webp" alt="mason eating an apple"></li>
-            <li class="slide closeDrumset"><img src="./images/webps/close-drumset-bw.webp" alt="mason playing the drums in black & white"></li>
+            <li class="slide closeDrumset"><img src="./images/webps/close-drumset-bw.webp"
+                    alt="mason playing the drums in black & white"></li>
             <!-- <li class="slide flower"><img src="./images/webps/me-w-flower.webp" alt=""></li> -->
             <li class="slide PAS"><img src="./images/webps/PAS_headshot_square.webp" alt="mason's main headshot"></li>
         </ul>

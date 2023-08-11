@@ -19,13 +19,19 @@ p {
     min-width: 200px;
 }
 
+#headers {
+    width: 80vw;
+    max-width: 800px;
+    margin: 5vh auto;
+}
+
 .mainAbout {
     position: relative;
-    display: flex;
-    flex-flow: row wrap-reverse;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     justify-content: space-evenly;
     align-items: center;
-    margin: 40px 2vw;
+    margin: 50px 10vw;
     gap: 5vw;
     /* border: 5px solid black; */
 }
@@ -40,8 +46,9 @@ p {
 } */
 
 #mainHeadshot {
-    max-width: 600px;
-    min-width: 350px;
+    aspect-ratio: 100/141;
+    max-width: 423px;
+    min-width: 300px;
     width: 32vw;
     border-radius: 300px;
     /* border: 15px solid white; */
@@ -60,8 +67,6 @@ p {
     text-align: center;
     color: rgb(12, 45, 12);
 }
-
-
 
 .contact {
     display: block;
@@ -96,9 +101,11 @@ p {
 }
 
 .slWrapper {
-    margin: 20px 20px;
+    margin: 20px auto;
     position: relative;
     overflow: hidden;
+    width: 80vw;
+    max-width: 1000px;
 }
 
 .slWrapper::after{
@@ -111,8 +118,8 @@ p {
 }
 
 .slContainer {
-    height: 1000px;
-    width: 1000px;
+    height: 800px;
+    width: 800px;
     display: flex;
     list-style: none;
     margin: auto;
@@ -165,18 +172,18 @@ p {
 
 
 .slWrapper img {
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 800px;
 }
 
 @media screen and (max-width: 1005px) {
     .slContainer {
-        width: 600px;
-        height: 600px;
+        width: 80%;
+        height: calc(80vw * .8);
     }
     
     .slide img {
-        width: 600px;
+        width: calc(80vw * .8);
         height: 100%;
     }
 
@@ -186,6 +193,16 @@ p {
 }
 
 @media screen and (max-width: 973px) {
+    .mainAbout {
+        display: block;
+    }
+
+    #mainHeadshot {
+        width: 80vw;
+        display: block;
+        margin: 5vh auto;
+    }
+    
     #aboutCopy {
         width: 80vw;
         margin: 0 auto;
@@ -199,10 +216,15 @@ p {
 
 @media screen and (max-width: 600px) {
 
+    #headers {
+        margin: 10px auto;
+    }
+
     #mainHeadshot {
         min-width: 0;
         width: 70vw;
         border-radius: 20px;
+        margin: 20px auto;
     }
 
     #aboutCopy {
@@ -211,21 +233,6 @@ p {
 
     .contact {
         margin: 2vw auto;
-    }
-
-    .slWrapper {
-        margin: 2vw;
-    }
-
-    .slContainer {
-        width: 90%;
-        height: 100%;
-        margin-top: 1vw;
-    }
-    
-    .slide img {
-        width: 90vw;
-        height: 100%;
     }
 
     p {
