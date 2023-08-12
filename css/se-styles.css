@@ -134,9 +134,10 @@ main {
 .sectionFlex {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 2vw;
+    margin: 0 auto;
 }
 
 .sectionText {
@@ -146,6 +147,29 @@ main {
 
 .sectionText p {
     font-size: calc((1.5 - 1) * 1.2vw + .6rem);
+}
+
+.sectionLinks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.sectionLinks a {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: calc((1.7 - 1) * 1.2vw + .6rem);
+    background-color: rgb(17, 70, 17);
+    color: antiquewhite;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.sectionLinks a:hover {
+    background-color: rgb(18, 124, 86);
 }
 
 .techList {
@@ -168,13 +192,13 @@ main {
 }
 
 .container {
-    width: 50vw;
+    width: 45vw;
     max-width: 800px;
 }
 
 .containerImage {
     display: block;
-    width: 50vw;
+    width: 45vw;
     max-width: 800px;
     margin: auto;
 }
