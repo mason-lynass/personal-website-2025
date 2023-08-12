@@ -50,7 +50,7 @@ p {
     max-width: 423px;
     min-width: 300px;
     width: 32vw;
-    border-radius: 300px;
+    border-radius: 20px;
     /* border: 15px solid white; */
 }
 
@@ -223,7 +223,6 @@ p {
     #mainHeadshot {
         min-width: 0;
         width: 70vw;
-        border-radius: 20px;
         margin: 20px auto;
     }
 
