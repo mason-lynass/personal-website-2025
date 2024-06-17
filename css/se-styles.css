@@ -186,9 +186,10 @@ main {
 .techList li {
     display: inline;
     padding: 5px;
-    border-radius: 5px;
     color: antiquewhite;
-    background-color: rgb(17, 70, 17);
+    background-color: white;
+    color: rgb(17, 70, 17);
+    border: 2px solid rgb(17, 70, 17);
 }
 
 .container {
