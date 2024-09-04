@@ -432,10 +432,12 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
-#extra p, #extra a {
+#extra p, #extra a, #extra li {
     font-size: calc((1.5 - 1) * 1.2vw + .5rem);
+    color: rgb(17, 70, 17);
 }
 
 
