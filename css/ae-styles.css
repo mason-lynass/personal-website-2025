@@ -82,6 +82,16 @@ iframe {
     
 }
 
+#more-my-music p {
+    width: 70vw;
+    margin: 10px auto;
+}
+
+#more-my-music iframe {
+    display: block;
+    margin: 40px auto;
+}
+
 /* .m4aodVideoFlexbox {
     display: flex;
     flex-flow: row wrap;
@@ -150,7 +160,7 @@ iframe {
 .samplesLink a {
     font-family: 'Montserrat';
     text-decoration: none;
-    color: antiquewhite;
+    color: rgb(250,240,235);
 }
 
 .samplesLink:hover {
@@ -304,7 +314,7 @@ iframe {
         height: calc(90vw / (35/47))
     }
 
-    #newm4flexNew div iframe {
+    #newm4flexNew div iframe, #more-my-music iframe {
         width: 90vw;
         height: calc(90vw / (16/9));
         margin: auto;

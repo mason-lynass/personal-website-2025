@@ -12,7 +12,8 @@
 
 html {
     /* background-color: rgb(251, 238, 218); */
-    background-color: antiquewhite;
+    background-color: rgb(250,240,235);
+    /* background-color: antiquewhite; */
 }
 
 body {
@@ -56,7 +57,7 @@ hr {
     display: block;
     font-size: 36px;
     font-weight: bolder;
-    color: antiquewhite;
+    color: rgb(250,240,235);
     margin: 0;
     padding: 20px;
     text-decoration: none;
@@ -109,7 +110,7 @@ header {
     padding: 1vw;
     margin: 0 .5vw;
     text-transform: uppercase;
-    color: antiquewhite;
+    color: rgb(250,240,235);
     text-decoration: none; 
     border-radius: 30px;
     font-size: calc((1.5 - 1) * 1.2vw + .3rem);
@@ -202,7 +203,7 @@ h1 {
         top: 3vw;
         height: calc(29px + 1vw);
         color: rgb(17, 70, 17);
-        background-color: antiquewhite;
+        background-color: rgb(250,240,235);
         border: 0;
         border-radius: 10px;
         padding: 0 2vw;
@@ -227,7 +228,7 @@ h1 {
 
 .nav .activePage {
     color: rgb(17, 70, 17);
-    background-color: antiquewhite;
+    background-color: rgb(250,240,235);
 }
 
 .nav .otherPage:hover {

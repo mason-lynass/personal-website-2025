@@ -32,7 +32,7 @@ main {
 }
 
 .overlay p {
-    color: antiquewhite;
+    color: rgb(250,240,235);
     max-width: 1000px;
     margin: 10px auto;
     font-size: calc((1.5 - 1) * 1.2vw + .8rem);
@@ -61,7 +61,7 @@ main {
     width: fit-content;
     max-width: 1200px;
     border-radius: 2vw;
-    background-color: antiquewhite;
+    background-color: rgb(250,240,235);
     
     /* border: 5px solid black; */
 }
@@ -110,7 +110,7 @@ main {
 
 .p3 a:hover {
     background-color: rgb(18, 124, 86);
-    color: antiquewhite;
+    color: rgb(250,240,235);
     text-decoration: none;
     padding: 10px 20px;
     margin: 0;
@@ -163,7 +163,7 @@ main {
     padding: 10px 20px;
     font-size: calc((1.7 - 1) * 1.2vw + .6rem);
     background-color: rgb(17, 70, 17);
-    color: antiquewhite;
+    color: rgb(250,240,235);
     border-radius: 10px;
     text-decoration: none;
 }
@@ -186,7 +186,7 @@ main {
 .techList li {
     display: inline;
     padding: 5px;
-    color: antiquewhite;
+    color: rgb(250,240,235);
     background-color: white;
     color: rgb(17, 70, 17);
     border: 2px solid rgb(17, 70, 17);
@@ -224,6 +224,7 @@ main {
 
 #bbbtext {
     width: 80vw;
+    max-width: 800px;
     text-align: left;
 }
 
@@ -238,6 +239,13 @@ main {
 #bbbImages img {
     width: 40vw;
     height: 100%;
+}
+
+#sumo-more-text {
+    width: 90vw;
+    max-width: 800px;
+    margin: 0px auto;
+    color:rgb(17, 70, 17)
 }
 
 .smallLine {
@@ -267,6 +275,7 @@ main {
 
 #useSoundText {
     width: 80vw;
+    max-width: 800px;
 }
 
 #useSoundText h2 {

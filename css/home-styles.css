@@ -60,7 +60,7 @@ body {
     font-size: 2vw;
     border: 10px solid rgb(12, 45, 12);
     color: black;
-    background-color: antiquewhite;
+    background-color: rgb(250,240,235);
     text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ body {
     text-align: center;
     font-size: 1.4vw;
     text-decoration: none;
-    background-color: antiquewhite;
+    background-color: rgb(250,240,235);
 }
 
 
