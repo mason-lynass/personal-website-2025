@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Mason Lynass" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      name="og:description"
+      content="This website contains information about Mason Lynass, a software engineer, music creator, and A/V producer living in Seattle, Washington."
+    />
+    <link rel="canonical" href="https://www.masonlynass.com" />
+    <meta property="og:url" content="https://www.masonlynass.com" />
+    <meta property="og:site_name" content="Mason Lynass" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="This website contains information about Mason Lynass, a software engineer, music creator, and A/V producer living in Seattle, Washington."
+    />
+    <title>Mason Lynass - About</title>
+    <link rel="icon" type="image/x-icon" href="/images/apple.ico" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+    />
+    <link rel="stylesheet" href="../css/page-top-styles.css" />
+    <link rel="stylesheet" href="../css/about-styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <a class="otherPage" id="MLHeader" href="../index.html">Mason Lynass</a>
+      <nav role="navigation" class="nav">
+        <button id="menuButton">Menu</button>
+        <ul id="menuUL">
+          <li>
+            <a class="otherPage dd" href="../software-engineering.html"
+              >Software Engineering</a
+            >
+          </li>
+          <li>
+            <a class="otherPage dd" href="../audio-engineering.html"
+              >Audio Engineering</a
+            >
+          </li>
+          <li>
+            <a class="otherPage dd" href="../sound-design.html">Sound Design</a>
+          </li>
+          <li>
+            <a class="otherPage dd" href="../music-production.html"
+              >Music Production</a
+            >
+          </li>
+          <li><a class="otherPage dd" href="../index.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>
+          Using React-Google-Maps, AdvancedMarkers, and implementing Google Maps
+          JavaScript API features in the Better Bathroom Bureau website
+        </h1>
+        <h4>July 1, 2024</h4>
+      </div>
+      <p>
+        To provide an ideal user experience on the Better Bathroom Bureau web
+        platform, I've used Google Maps and its various APIs to display maps and
+        markers, geolocate users and facilities, and allow users to search for
+        restrooms closest to their location or address. I recently noticed that
+        the google.maps.Marker component I've been using to display markers has
+        been deprecated by the Google Maps team. Since I needed to update the
+        marker component in various places in the site, I took the opportunity
+        to re-evaluate how I implement the Google Maps features across the
+        board. I'll use this post to show my initial implementation, some
+        JavaScript packages and React libraries you can use to add Google Maps
+        features to a web app, and describe my current solution with some brand
+        new site features.
+      </p>
+      <img src="" />
+      <p>
+        It's a good idea to update your google.maps.Marker components to use the
+        AdvancedMarkerElement class instead, even if it's not the most
+        site-breaking change. AdvancedMarkers can easily accommodate collision
+        and visibility preferences, style customization, and creating markers
+        with graphics. If you've struggled to customize Marker elements in the
+        past, this solution will save you a bunch of time and effort. Check out
+        the official documentation from Google about migrating to
+        AdvancedMarkers, and while you're at it, make sure your website isn't
+        using any previously provided samples that might be using a polyfill.io
+        script!
+      </p>
+      <p>
+        For the first “finished” version of the BBB site, I tried multiple
+        different libraries and helpers to add a map with a marker to various
+        pages, including the js-api-loader NPM package from Google Maps, but I
+        was hoping to find something React-specific, and decided to use the
+        react-wrapper package instead. The react-wrapper package uses the
+        js-api-loader package to load the Google Maps JavaScript API, but allows
+        for more streamlined implementation and customization of React
+        components. Wrap your components in the "Wrapper" component and add your
+        API Key as a prop to load the API and use its features in React syntax.
+        Here's an example of a map from a single bathroom page:
+      </p>
+      <code></code>
+      <p>with a BathroomPageMap component that looks like this:</p>
+      <code></code>
+      <p>and a Marker component like this:</p>
+      <code></code>
+      <p>
+        Large sections of the code for this BathroomPageMap and Marker were
+        pulled directly from the documentation for the Google Maps JavaScript
+        API. I've added some code related to opening the infoWindow in the
+        Marker's onClick event, but otherwise changed very little to get a basic
+        map on the page. I specified a “center” and “zoom” for the
+        BathroomPageMap, and a “position” for the Marker, as props inside the
+        renderMap function.
+      </p>
+      <p>
+        If you follow along with the “Migrate to advanced markers” documentation
+        I linked to earlier, you would think that it would be as simple as
+        changing google.maps.Marker to google.maps.marker.AdvancedMarkerElement
+        and adding a Map ID to the map initialization. But I was using
+        react-wrapper, which is community-maintained and hasn't seen any
+        significant updates in a couple years, so when I tried these changes,
+        the “Marker” library would not load correctly, and I couldn't access an
+        AdvancedMarkerElement. While react-wrapper was an easy solution for my
+        initially simple implementation, I knew that if I wanted to add any
+        advanced features to my application, I should probably find a new
+        solution for integrating with the Google Maps JavaScript API.
+      </p>
+      <hr />
+      <p>
+        Fortunately for React developers, there's recent official documentation
+        on the Google Maps JavaScript API platform detailing how to Add a Google
+        Map to a React app — no need to search for independent packages for most
+        use cases. Their documentation directs us to use the
+        “@vis.gl/react-google-map” package, a third-party library that
+        implements most of the key functionality and features from the Google
+        Maps Platform. They provide an example codelab and walk-through to
+        describe how to use various features, but you can probably modify your
+        old codebase without going through the whole example. This package uses
+        an "APIProvider" component that uses an API Key prop, similar to the
+        react-wrapper package I was previously using, so these initial changes
+        were pretty simple to make.
+      </p>
+      <p>
+        Before modifying any specific components, I wrapped my whole application
+        in the "APIProvider" component so that every component that uses the API
+        has access to the API with my API Key without explicitly wrapping each
+        component separately. This was a quick and easy solution to modify many
+        features at once… is it bad to wrap the whole app in this APIProvider
+        for any reason? Let me know in the comments, I guess.
+      </p>
+      <p>
+        After modifying my code to use the new package, here's my new version of
+        the Map component from my single bathroom page:
+      </p>
+      <code></code>
+      <p>
+        There are a few things to note about this new map component. First of
+        all, I'm using default components provided through the react-google-maps
+        package instead of my “custom” components I was previously using — the
+        default components already allow for plenty of customization that I was
+        previously configuring independently. I provided a map ID as a prop to
+        the component, and set reuseMaps to “true” so that if a page containing
+        a map reloads, the app reuses the previously loaded map instead of
+        making another request to the API. I'm also using the “default” center &
+        zoom props, instead of just “center” and “zoom”, with “gestureHandling:
+        ‘greedy'” in the options config, so that users can move the map with a
+        mouse or one finger drag instead of being confined to a fixed position
+        and zoom.
+      </p>
+      <hr />
+      <p>
+        As more users interacted with the BBB site and brainstormed new ideas
+        for app features, I ran into a challenge in my more complicated Map
+        component on my “Near Me” page, which shows a big map of all of the
+        restrooms in the database. Before I adopted the new react-google-maps
+        package, the map was already draggable and zoomable. I wanted to be able
+        to re-center and reset the zoom of the map based on two events:
+      </p>
+      <ul>
+        <li>
+          1. User inputs their street address -> map re-centers to their
+          location and zooms in to a more specific region
+        </li>
+        <li>
+          2. User allows the application to access their location through the
+          Geolocation API built into most browsers -> once geolocated, map
+          re-centers to their location and zooms in to a more specific region
+        </li>
+      </ul>
+      <p>
+        But using the “default” center and zoom props would not allow me to
+        change the camera of the map based on user-provided data, because the
+        map would re-render after it receives new data but use the “default”
+        props instead of the new data. And simply using “zoom” and “center”
+        props would not accommodate any event-based map modulation, in the form
+        of inputting an address, allowing geolocation, or manually adjusting the
+        camera of the map; the map would always be set to the initial values of
+        these props unless they could somehow be modified. This is a use case
+        for the “onCenterChanged” and “onZoomChanged” React props listed in the
+        documentation for the "Map" component in the API docs.
+      </p>
+      <p>Here's my code for my new Map component on the Near-Me page:</p>
+      <code></code>
+      <p>
+        With this initialization of the map with specific props and event
+        handlers, I can use state variables and their updater functions to
+        setMapCenter to a new center provided by a successful geolocation
+        request or an approval to use the user's location, as well as updating
+        the zoom with setZoom to zoom into a more specific location. With the
+        onCenterChanged event handler, when the user manually moves the map, the
+        “center” state variable is updated to the new center of the map based on
+        the user's click and drag adjustments — the same logic applies to the
+        onZoomChanged function.
+      </p>
+      <p>
+        One thing I don't love about this current setup is that when the map's
+        camera is adjusted by a user's address input or location usage approval,
+        I think there's some unnecessary computing going on. When either of
+        these events occur, the center and zoom are updated, and I believe that
+        these updates trigger the onCenterChanged and onZoomChanged functions
+        when they don't need to be triggered. Fortunately, this would only cause
+        these functions to run one extra time and not trigger an unbreakable
+        loop, but I have noticed a slight lag in performance because of this
+        small bug. If anyone has any solutions, I'd love to hear some ideas.
+      </p>
+      <p>
+        Now that the map is displayed on the page and behaving correctly when
+        controlled by various user inputs, we can talk about adding markers to
+        the map. I've added a marker for every bathroom in the database on this
+        page, and the code I wrote to handle that looks like this:
+      </p>
+      <code></code>
+      <p>
+        The allBathrooms function is called inside the Map component to include
+        all of the rendered pins in the Map. This function uses the “bathrooms”
+        array of objects and returns a pin for each object. Each object in the
+        array gets a “position” variable using lat & lng K/V pairs stored in the
+        object, which is passed to the AdvancedMarker component as a prop along
+        with a key, all of the data about the specific bathroom, and an onClick
+        event handler. The onClick event handler calls the setClickedPin
+        function with the bathroom object as an argument — this function simply
+        displays a small information box about the clicked pin, with a link to
+        visit the bathroom page about that specific bathroom to view more
+        information.
+      </p>
+      <p>
+        Pins are styled with different colors depending on whether the bathroom
+        was submitted by the logged-in user; ideally it's an easy way to find
+        bathrooms the user has submitted on the map. Feel free to style the pins
+        with these component-specific props, or use classNames and ids
+        accessible to a separate CSS file.
+      </p>
+      <p>
+        I've enjoyed exploring the capabilities of the Google Maps JavaScript
+        API to try to implement my own ideas for features and draw inspiration
+        from classes and methods listed in the API docs. I've also used the
+        Geocoding API to get location data about addresses provided by users in
+        various places on the website — to get lat/lng coordinates for an
+        address before storing the information in the database, and also to
+        provide a new lat/lng coordinates for the map center based on the user's
+        address. Feel free to explore the BBB repo to see how I make requests to
+        the Geocoding API and use the response returned from these requests.
+      </p>
+      <p>
+        One big reason I loved using the new vis.gl/react-google-maps package is
+        that there are plenty of examples in their documentation! Whether you
+        want to specify custom marker clustering, implement autocomplete or add
+        directions, display synchronized maps, or just set up a basic example
+        map, there are visual examples with code provided on their website. I
+        hope this post can help you use the react-google-maps package to add new
+        Google Maps or update old maps to your apps and projects!
+      </p>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
