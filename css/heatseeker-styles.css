@@ -21,10 +21,16 @@ section h1 {
   text-align: center;
   font-family: 'Montserrat';
   margin: 20px auto 10px auto;
+  display: none;
 }
 
 p {
     font-size: 14px;
+}
+
+hr {
+    width: 100px;
+    margin: auto;
 }
 
 audio {
